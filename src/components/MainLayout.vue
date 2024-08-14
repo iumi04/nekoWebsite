@@ -110,23 +110,50 @@
       <v-img src="../assets/LeftLamp.png" class="left-lamp" contain></v-img>
       <v-row class="text-center" align="center" justify="center">
         <v-col cols="auto" class="featured-tool-box">
-          <h2 class="featured-tool-heading">Featured AI Tools</h2>
+          <v-row align="center" justify="center">
+            <v-img src="../assets/Tool1.png" class="tool-icon" contain height="50"></v-img>
+            <h2 class="featured-tool-heading">Featured AI Tools</h2>
+            <v-img src="../assets/Tool2.png" class="tool-icon" contain height="50"></v-img>
+          </v-row>
         </v-col>
       </v-row>
       <v-row class="tool-grid" align="center" justify="center">
         <v-col
-          v-for="index in 6"
-          :key="'box-' + index"
-          cols="auto"
-        >
-          <v-btn class="tool-box" :style="boxStyles[index - 1]"></v-btn>
-        </v-col>
+  v-for="index in 6"
+  :key="'box-' + index"
+  cols="auto"
+>
+  <v-btn class="tool-box" :style="boxStyles[index - 1]">
+    <div class="tool-box-content">
+      <v-img 
+        v-if="index === 1"
+        src="../assets/sturppy.webp" 
+        class="tool-box-image" 
+        contain 
+      ></v-img>
+      <div class="tool-box-text">
+        <v-img 
+          v-if="index === 1" 
+          src="../assets/ToolIcon.png" 
+          class="tool-icon" 
+          contain 
+          height="24"
+        ></v-img>
+        <span v-if="index === 1" class="tool-title">Sturppy</span>
+        <p v-if="index === 1" class="tool-description">
+          Sturppy is an AI-driven tool for quick and efficient financial modeling, used by over 5,000 companies globally.
+        </p>
+      </div>
+    </div>
+  </v-btn>
+</v-col>
+
       </v-row>
       <v-img src="../assets/RightLamp.png" class="right-lamp" contain></v-img>
       <v-img src="../assets/SleepCat.png" class="sleeping-cat" contain></v-img>
     </v-container>
 
-    <v-divider class="separator"></v-divider>
+    <v-divider class="separator second"></v-divider>
 
     <!-- Third Section -->
     <v-container fluid class="third-section">
@@ -177,12 +204,12 @@ export default {
   data() {
     return {
       boxStyles: [
-        { backgroundColor: '#B99976', height: '300px', width: '300px' },
-        { backgroundColor: '#E5D3B3', height: '300px', width: '300px' },
-        { backgroundColor: '#B99976', height: '300px', width: '300px' },
-        { backgroundColor: '#E5D3B3', height: '300px', width: '300px' },
-        { backgroundColor: '#B99976', height: '300px', width: '300px' },
-        { backgroundColor: '#E5D3B3', height: '300px', width: '300px' },
+        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
+        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
+        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
+        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
+        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
+        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' }  // Increased size
       ],
     };
   },
@@ -204,8 +231,10 @@ body {
 }
 
 .separator {
-  border-top: 20px solid #4a2e0d; 
+  border-top: 20px solid #4a2e0d;
   margin: 0;
+  position: relative; /* Position relative to ensure correct stacking */
+  z-index: 1; /* Ensure separators are on top */
 }
 
 .background {
@@ -322,13 +351,13 @@ body {
 .search-input {
   width: 100%;
   max-width: 400px;
-  font-size: 18px; /* Slightly larger font size */
+  font-size: 18px; 
 }
 
 .search-btn {
   margin-left: 10px;
   font-family: 'Shadows Into Light', cursive;
-  font-size: 20px; /* Slightly larger font size */
+  font-size: 20px; 
   font-weight: bold; 
 }
 
@@ -338,12 +367,12 @@ body {
 }
 
 .featured-tags-text {
-  font-size: 40px; /* Slightly larger font size */
+  font-size: 40px; 
   font-family: 'Shadows Into Light', cursive;
 }
 
 .featured-tags {
-  margin-top: 5px; /* Reduced space between text and tags */
+  margin-top: 5px; 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -375,16 +404,17 @@ body {
 }
 
 .left-cat, .right-cat {
-  height: 450px;
-  width: 450px;
+  height: 420px; /* Reduced size for better visibility */
+  width: 420px; /* Reduced size for better visibility */
+  margin-top: -150px; /* Move cats up to reveal separators */
 }
 
 .left-cat {
-  margin-left: -233px; 
+  margin-left: -260px; 
 }
 
 .right-cat {
-  margin-right: -290px; 
+  margin-right: -320px; 
 }
 
 .second-section {
@@ -396,59 +426,115 @@ body {
 
 .left-lamp, .right-lamp {
   position: absolute;
-  width: 120px; 
+  width: 100px; 
   height: auto;
+  box-shadow: none; 
 }
 
 .left-lamp {
-  top: 10%;
+  top: 0%;
   left: 10%;
 }
 
 .right-lamp {
-  top: 10%;
+  top: 0%;
   right: 10%;
 }
 
 .featured-tool-box {
-  background-color: #ecb07b; 
+  background-color: #f3bd8e; 
   padding: 20px;
-  border-radius: 15px;
   border: 2px solid #391a01;
   box-shadow: none; 
   margin-top: 25px;
+  border-radius: 0; 
 }
 
 .featured-tool-heading {
   font-family: 'Indie Flower', cursive;
-  font-size: 36px;
-  color: #f5a700; 
+  font-size: 46px;
+  color: #9d6b00; 
+  font-weight: bold;
   margin: 0;
+}
+
+.tool-icon {
+  height: 40px;
 }
 
 .tool-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* Increased gap */
-  margin: 20px 0;
+  gap: 0px; /* Adjusted gap between boxes */
+  margin: 80px auto; /* Center horizontally */
+  max-width: 1200px; /* Restrict width to center properly */
+  margin-left: 200px;
 }
 
 .tool-box {
-  height: 200px; /* Increased size */
-  width: 200px; /* Increased size */
-  border-radius: 15px; /* Slightly larger border-radius */
+  height: 200px;
+  width: 200px;
+  border-radius: 0;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-box-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tool-box-image {
+  height: 100%;
+  width: 38%;
+  left: 31%;
+  object-fit: cover;
+}
+
+.tool-box-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 1; /* Ensure text is above the image */
+}
+
+.tool-title {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.tool-description {
+  font-size: 12px; /* Adjust as needed */
+  color: black;
+  margin-top: 5px;
+  padding: 0 10px;
+}
+
+.separator.second {
+  position: relative;
+  z-index: 1; 
 }
 
 .sleeping-cat {
   position: absolute;
-  bottom: -70px; /* Moved further down */
-  left: 5%; /* Moved a bit more to the left */
-  height: 200px; /* Increased size */
+  bottom: -80px; 
+  left: 1%; 
+  height: 200px; 
+  z-index: 2;
 }
 
 .third-section {
-  height: 300px;
-  background-color: #f5f6fa;
+  height: 100vh;
+  background-image: url('~@/assets/ThirdBackground.png'); 
 }
 
 .tag-categories-icon {
@@ -538,5 +624,188 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   height: 60px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header-title {
+    font-size: 35px;
+  }
+
+  .icon-text {
+    font-size: 20px;
+  }
+
+  .slogan-text {
+    font-size: 36px;
+  }
+
+  .search-input {
+    max-width: 300px;
+    font-size: 16px;
+  }
+
+  .search-btn {
+    font-size: 18px;
+  }
+
+  .featured-tags-text {
+    font-size: 35px;
+  }
+
+  .tag-btn {
+    height: 50px;
+    width: 120px;
+    font-size: 18px;
+  }
+
+  .left-cat, .right-cat {
+    height: 300px;
+    width: 300px;
+  }
+
+  .tool-box {
+  height: 200px; 
+  width: 200px; 
+  border-radius: 0;
+  border: 2px solid black; 
+  position: relative; /* Ensure positioning works correctly */
+  overflow: hidden; /* Hide anything overflowing */
+}
+
+.tool-box-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to the bottom */
+}
+
+.tool-box-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Cover the square */
+}
+
+.tool-box-text {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Add some padding */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tool-icon {
+  margin-right: 10px;
+}
+
+.tool-title {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 18px;
+  color: black;
+  margin-right: 10px;
+}
+
+.tool-description {
+  font-size: 12px; /* Smaller font size for description */
+  color: black;
+  margin-top: 5px;
+  padding: 0 10px;
+}
+
+
+  .tool-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 30px;
+  }
+
+  .icon-text {
+    font-size: 18px;
+  }
+
+  .slogan-text {
+    font-size: 30px;
+  }
+
+  .search-input {
+    max-width: 250px;
+    font-size: 14px;
+  }
+
+  .search-btn {
+    font-size: 16px;
+  }
+
+  .featured-tags-text {
+    font-size: 30px;
+  }
+
+  .tag-btn {
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .left-cat, .right-cat {
+    height: 250px;
+    width: 250px;
+  }
+
+  .tool-box {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 25px;
+  }
+
+  .icon-text {
+    font-size: 16px;
+  }
+
+  .slogan-text {
+    font-size: 24px;
+  }
+
+  .search-input {
+    max-width: 200px;
+    font-size: 12px;
+  }
+
+  .search-btn {
+    font-size: 14px;
+  }
+
+  .featured-tags-text {
+    font-size: 24px;
+  }
+
+  .tag-btn {
+    height: 30px;
+    width: 80px;
+    font-size: 14px;
+  }
+
+  .left-cat, .right-cat {
+    height: 200px;
+    width: 200px;
+  }
+
+  .tool-box {
+    height: 120px;
+    width: 120px;
+  }
 }
 </style>
