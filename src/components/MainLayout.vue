@@ -171,50 +171,71 @@
             <v-img src="../assets/Sticker.png" class="sticker-icon" contain></v-img>
             <p class="pick-one-text">Pick One</p>
           </div>
+          <!-- Small Boxes Container -->
+          <div class="small-boxes-container">
+            <!-- Example of adding multiple boxes with varying sizes -->
+            <div v-for="n in 15" :key="'small-box-' + n" class="small-box"></div>
+          </div>
         </div>
       </v-row>
-      <v-row class="buttons-row" align="center" justify="center">
+      <v-row class="buttons-column" align="center" justify="flex-end">
         <v-col
-          v-for="index in 8"
+          v-for="(label, index) in buttonLabels"
           :key="'button-' + index"
           cols="auto"
         >
           <v-btn
             class="button-item"
-            :style="{ backgroundColor: '#edb774', color: 'black', border: '3px solid #a3613a' }"
+            :style="{ backgroundColor: '#edb774', color: 'black', border: '3px solid #a3613a', fontFamily: 'Shadows Into Light', fontSize: '16px' }"
           >
-            Button {{ index }}
+            {{ label }}
           </v-btn>
         </v-col>
       </v-row>
+
       <v-img src="../assets/WalkingCat.png" class="walking-cat" contain></v-img>
-      <v-img src="../assets/CatalogIcon.png" class="catalog-icon" contain height="50"></v-img>
+      <v-img src="../assets/CatalogIcon.png" class="catalog-icon" contain></v-img>
+
     </v-container>
 
     <v-divider class="separator"></v-divider>
 
     <!-- Bottom Section -->
     <v-container fluid class="bottom-section">
-      <v-img src="../assets/BottomBackground.png" class="background" cover></v-img>
-      <v-row class="quick-link" align="center" justify="center">
-        <v-img src="../assets/LinkIcon.png" class="link-icon" contain height="40"></v-img>
-        <h3 style="font-family: 'Indie Flower', cursive;">Quick Link</h3>
-      </v-row>
-      <v-row class="contact" align="center" justify="center">
-        <v-img src="../assets/ContactBanner.png" class="contact-banner" contain></v-img>
-        <v-row class="contact-info" align="center" justify="space-around">
-          <v-col cols="auto">
-            <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="30"></v-img>
-            <p>Contact</p>
-          </v-col>
-          <v-col cols="auto">
-            <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="30"></v-img>
-            <p>Email</p>
-          </v-col>
-        </v-row>
-      </v-row>
-      <v-img src="../assets/CatPaw.png" class="cat-paw" contain></v-img>
-    </v-container>
+  <v-img src="../assets/BottomBackground.png" class="background" cover></v-img>
+  
+  <div class="quick-links-box">
+    <span class="quick-links">Quick Links</span>
+    <img src="../assets/LinkIcon.png" alt="Link Icon" class="link-icon">
+  </div>
+  
+  <!-- New larger box area -->
+  <div class="large-box">
+    <span class="large-box-text">Links</span>
+  </div>
+  
+  <div class="footer-text">
+    <p>2024 All Rights Reserved. Developed by edison.ai</p>
+  </div>
+  
+  <v-row class="contact" align="center" justify="center">
+    <v-img src="../assets/ContactBanner.png" class="contact-banner" contain></v-img>
+    <v-row class="contact-info" align="center" justify="space-around">
+      <v-col cols="auto">
+        <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
+        <p style="font-size: 63px; position: absolute; margin-left: 675px; margin-top: 7px; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
+      </v-col>
+      <v-col cols="auto">
+        <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
+        <p style="font-size: 34px; position: absolute; margin-left: -70px; margin-top: 140px; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
+        <p style="font-size: 24px; position: absolute; margin-left: -120px; margin-top: 200px; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
+      </v-col>
+    </v-row>
+  </v-row>
+  
+  <v-img src="../assets/CatPaw.png" class="cat-paw" contain></v-img>
+</v-container>
+
   </v-app>
 </template>
 
@@ -223,13 +244,23 @@ export default {
   name: 'MainLayout',
   data() {
     return {
+      buttonLabels: [
+        "Program/Development---",
+        "Design/Creativity",
+        "Data management/Analyse",
+        "AI/Machine Learning",
+        "Marketing/Social Media",
+        "Business/Strategy",
+        "Multimedia/Production",
+        "Chat/Communication"
+      ],
       boxStyles: [
-        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
-        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
-        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
-        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
-        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' }, // Increased size
-        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' }  // Increased size
+        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' },
+        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' },
+        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' },
+        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' },
+        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' },
+        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' }
       ],
     };
   },
@@ -562,32 +593,54 @@ body {
   position: relative;
   padding-top: 20px; /* Adjust padding to accommodate the "Tag Categories" bar */
 }
-
-.buttons-row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.buttons-column {
+  flex-direction: column;
+  align-items: flex-end; 
+  position: absolute;
+  width: 245px;
+  top: 70px; 
+  left: 420px;
+  height: calc(100vh - 40px); 
 }
 
 .button-item {
-  height: 50px;
-  width: 150px;
-  margin: 5px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-family: 'Shadows Into Light', cursive;
-  border: 3px solid #a3613a;
+  width: 100%;
+  box-sizing: border-box; 
+  padding: 0 3px; 
+  font-weight: bold;
+  overflow: hidden; 
+}
+
+.button-item .v-btn {
+  width: 100%; 
+  box-sizing: border-box; 
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+.button-item .v-btn img {
+  margin-right: 5px; 
+}
+
+.button-sticker {
+  height: 24px; 
+}
+
+.box-container {
+  position: relative;
+  margin-right: 260px; 
 }
 
 .tag-categories-box {
-  background-color: #f3bd8e; /* Light brown box color */
-  padding: 15px;
+  background-color: #f3bd8e; 
+  padding: 10px;
   border: 2px solid #391a01;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1200px; /* Same width as Featured AI Tools */
+  max-width: 1200px;
 }
 
 .tag-categories-icon {
@@ -612,20 +665,162 @@ body {
 
 .box-container {
   position: relative;
-  margin-right: 440px;
-  width: 470px; 
+  margin-right: 420px;
+  width: 460px; 
 }
 
 .box-background {
-  width: 100%; /* Adjust the image to fit the container */
-  height: auto;
+  height: calc(100% + 15px); 
+  width: auto; 
+}
+
+.small-boxes-container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  pointer-events: none; /* Allow clicks to pass through */
+  z-index: 5;
+}
+
+.small-box {
+  position: absolute;
+  background-color: #f3bd8e; /* Match background color of Tag Categories box */
+  border: 3px solid #e8940c; /* Match border color of Tag Categories box */
+  border-radius: 10px;
+  width: 60px;
+  height: 20px;
+  box-sizing: border-box;
+  /* Adjust sizes and positions as needed */
+}
+
+/* Add variations for box sizes and positions */
+.small-box:nth-child(1) {
+  top: 30%;
+  left: 10%;
+  width: 80px;
+  height: 35px;
+}
+
+/* Box 2 */
+.small-box:nth-child(2) {
+  top: 28%;
+  left: 100%;
+  width: 73px;
+  height: 35px;
+  transform: translateX(-100%);
+}
+
+/* Box 3 */
+.small-box:nth-child(3) {
+  top: 52%;
+  left: 12%;
+  width: 100px;
+  height: 35px;
+}
+
+/* Box 4 */
+.small-box:nth-child(4) {
+  top: 34%;
+  left: 35%;
+  width: 70px;
+  height: 37px;
+}
+
+/* Box 5 */
+.small-box:nth-child(5) {
+  top: 55%;
+  left: 45%;
+  width: 90px;
+  height: 34px;
+}
+
+/* Box 6 */
+.small-box:nth-child(6) {
+  top: 70%;
+  left: 23%;
+  width: 80px;
+  height: 35px;
+}
+
+/* Box 7 */
+.small-box:nth-child(7) {
+  top: 65%;
+  left: 83%;
+  width: 85px;
+  height: 33px;
+}
+
+/* Box 8 */
+.small-box:nth-child(8) {
+  top: 108%;
+  left: 10%;
+  width: 70px;
+  height: 37px;
+}
+
+/* Box 9 */
+.small-box:nth-child(9) {
+  top: 78%;
+  left: 53%;
+  width: 90px;
+  height: 35px;
+}
+
+/* Box 10 */
+.small-box:nth-child(10) {
+  top: 28%;
+  left: 55%;
+  width: 75px;
+  height: 34px;
+}
+
+/* Box 11 */
+.small-box:nth-child(11) {
+  top: 45%;
+  left: 72%;
+  width: 80px;
+  height: 35px;
+}
+
+/* Box 12 */
+.small-box:nth-child(12) {
+  top: 85%;
+  left: 85%;
+  width: 65px;
+  height: 34px;
+}
+
+/* Box 13 */
+.small-box:nth-child(13) {
+  top: 94%;
+  left: 34%;
+  width: 85px;
+  height: 34px;
+}
+
+/* Box 14 */
+.small-box:nth-child(14) {
+  top: 115%;
+  left: 50%;
+  width: 80px;
+  height: 35px;
+}
+
+/* Box 15 */
+.small-box:nth-child(15) {
+  top: 103%;
+  left: 75%;
+  width: 90px;
+  height: 33px;
 }
 
 .pick-one-content {
   position: absolute;
-  top: 15px; /* Adjust top position */
-  left: 15px; /* Adjust left position */
-  z-index: 10; /* Ensure text is above Sticker.png */
+  top: 15px; 
+  left: 15px; 
+  z-index: 10; 
 }
 
 .sticker-icon {
@@ -648,68 +843,129 @@ body {
   position: absolute;
   bottom: 13px; /* Adjust as needed */
   right: 130px;
-  height: 150px; /* Bigger size */
+  height: 190px; /* Bigger size */
 }
 
 .catalog-icon {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 50px;
+  top: 98px; /* Adjust as needed */
+  left: 587px;
+  height: 26px; /* Bigger size */
 }
 
 .bottom-section {
-  height: 200px;
-  background-color: #c8d6e5;
+  height: 100vh;
+  background-image: url('~@/assets/BottomBackground.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center;    
 }
 
-.quick-link, .contact {
+.quick-links-box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #f3bd8e; 
+  padding: 10px;
+  border: 4px solid #391a01; 
+  display: flex;
+  align-items: center;
+  color: rgb(87, 45, 4);
+  font-size: 40px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
+}
+
+.large-box {
+  position: absolute;
+  top: 250px; /* Adjust as needed to position below the quick links box */
+  left: 50px;
+  width: 400px; /* Width to make it square-like */
+  height: 300px; /* Height to match width */
+  background-color: #f3bd8e; 
+  border: 4px solid #391a01; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(87, 45, 4);
+  font-size: 40px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
+}
+
+.large-box-text {
+  font-size: 40px;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 20px; /* Position close to bottom */
+  left: 50px; /* Position close to the right */
+  color: white;
+  font-size: 28px;
+  font-family:monospace;
+}
+
+.footer-text p {
+  margin: 0; /* Remove default margin */
+}
+
+.contact {
   margin: 20px 0;
   position: relative;
 }
 
-.link-icon {
-  height: 40px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-h3 {
-  display: inline-block;
-  font-size: 24px;
-  color: #333;
-}
-
 .contact-banner {
-  width: 100%;
+  width: 520px;
   height: auto;
-  margin: 20px 0;
+  position: absolute;
+  right: 0;
+  top: 20%;
 }
 
 .contact-info {
   display: flex;
   justify-content: space-around;
+  position: absolute;
+  top: 10%;
+  width: 100%;
 }
 
-.contact-icon, .email-icon {
-  height: 30px;
-  margin-right: 10px;
-  vertical-align: middle;
+.contact-icon {
+  height: 50px;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 20px;
+}
+
+.email-icon {
+  height: 50px;
+  position: absolute;
+  margin-left: -145px;
+  margin-top: 147px;
 }
 
 .contact-info p {
-  display: inline-block;
   font-size: 18px;
-  color: #333;
+  color: white;
+  margin: 0;
+}
+
+.email-text {
+  color: gold;
 }
 
 .cat-paw {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 58%;
   transform: translateX(-50%);
-  height: 60px;
+  height: 170px;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
