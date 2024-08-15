@@ -159,16 +159,36 @@
     <v-container fluid class="third-section">
       <v-img src="../assets/ThirdBackground.png" class="background" cover></v-img>
       <v-row class="text-center" align="center" justify="center">
-        <h2 style="font-family: 'Indie Flower', cursive;">Tag Categories</h2>
+        <v-col class="tag-categories-box" cols="auto">
+          <v-img src="../assets/TagCatagoriesIcon.png" class="tag-categories-icon" contain height="60"></v-img>
+          <h2 class="tag-categories-heading">Tag Categories</h2>
+        </v-col>
       </v-row>
-      <v-img src="../assets/TagCatagoriesIcon.png" class="tag-categories-icon" contain height="40"></v-img>
-      <v-row class="pick-one" align="center" justify="center">
-        <v-img src="../assets/Box.png" class="box-background" contain width="300"></v-img>
-        <p style="font-family: 'Shadows Into Light', cursive;">Pick One</p>
-        <v-img src="../assets/Sticker.png" class="sticker-icon" contain></v-img>
+      <v-row class="pick-one-container" align="center" justify="flex-end">
+        <div class="box-container">
+          <v-img src="../assets/Box.png" class="box-background" contain></v-img>
+          <div class="pick-one-content">
+            <v-img src="../assets/Sticker.png" class="sticker-icon" contain></v-img>
+            <p class="pick-one-text">Pick One</p>
+          </div>
+        </div>
       </v-row>
-      <v-img src="../assets/CatalogIcon.png" class="catalog-icon" contain height="50"></v-img>
+      <v-row class="buttons-row" align="center" justify="center">
+        <v-col
+          v-for="index in 8"
+          :key="'button-' + index"
+          cols="auto"
+        >
+          <v-btn
+            class="button-item"
+            :style="{ backgroundColor: '#edb774', color: 'black', border: '3px solid #a3613a' }"
+          >
+            Button {{ index }}
+          </v-btn>
+        </v-col>
+      </v-row>
       <v-img src="../assets/WalkingCat.png" class="walking-cat" contain></v-img>
+      <v-img src="../assets/CatalogIcon.png" class="catalog-icon" contain height="50"></v-img>
     </v-container>
 
     <v-divider class="separator"></v-divider>
@@ -533,44 +553,109 @@ body {
 }
 
 .third-section {
-  height: 100vh;
-  background-image: url('~@/assets/ThirdBackground.png'); 
+  height: 100vh; /* Full viewport height */
+  background-image: url('~@/assets/ThirdBackground.png');
+  background-size: contain; /* Ensure the entire image is visible */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Avoid repeating the image */
+  background-color: #f3bd8e; /* Fallback color to fill the space not covered by the image */
+  position: relative;
+  padding-top: 20px; /* Adjust padding to accommodate the "Tag Categories" bar */
+}
+
+.buttons-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button-item {
+  height: 50px;
+  width: 150px;
+  margin: 5px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: 'Shadows Into Light', cursive;
+  border: 3px solid #a3613a;
+}
+
+.tag-categories-box {
+  background-color: #f3bd8e; /* Light brown box color */
+  padding: 15px;
+  border: 2px solid #391a01;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px; /* Same width as Featured AI Tools */
 }
 
 .tag-categories-icon {
-  height: 40px;
+  height: 60px;
   margin-right: 10px;
-  vertical-align: middle;
 }
 
-.pick-one {
+.tag-categories-heading {
+  font-family: 'Indie Flower', cursive;
+  font-size: 36px;
+  color: #9d6b00; 
+  font-weight: bold;
+  margin: 0;
+}
+
+.pick-one-container {
   position: relative;
   margin-top: 20px;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-container {
+  position: relative;
+  margin-right: 440px;
+  width: 470px; 
 }
 
 .box-background {
-  width: 300px;
+  width: 100%; /* Adjust the image to fit the container */
+  height: auto;
+}
+
+.pick-one-content {
+  position: absolute;
+  top: 15px; /* Adjust top position */
+  left: 15px; /* Adjust left position */
+  z-index: 10; /* Ensure text is above Sticker.png */
 }
 
 .sticker-icon {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  height: 40px;
+  height: 70px; /* Adjust size if needed */
+  right: 130px;
 }
 
-.catalog-icon {
-  margin-top: 20px;
-  height: 50px;
+.pick-one-text {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(87, 45, 4);
+  position: absolute;
+  top: 5px; /* Adjust to fit within Box.png */
+  left: 63px; /* Adjust to fit within Box.png */
+  z-index: 20; /* Ensure it is above Sticker.png */
 }
 
 .walking-cat {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 60px;
+  bottom: 13px; /* Adjust as needed */
+  right: 130px;
+  height: 150px; /* Bigger size */
+}
+
+.catalog-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 50px;
 }
 
 .bottom-section {
