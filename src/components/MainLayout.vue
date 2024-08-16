@@ -112,7 +112,7 @@
         <v-col cols="auto" class="featured-tool-box">
           <v-row align="center" justify="center">
             <v-img src="../assets/Tool1.png" class="tool-icon" contain height="50"></v-img>
-            <h2 class="featured-tool-heading">Featured AI Tools</h2>
+            <h2 class="featured-tool-heading" @click="redirectToDirectory">Featured AI Tools</h2>
             <v-img src="../assets/Tool2.png" class="tool-icon" contain height="50"></v-img>
           </v-row>
         </v-col>
@@ -273,6 +273,9 @@ export default {
   methods: {
     redirectToSturppy() {
       this.$router.push({ name: 'SturppyPage' });
+    },
+    redirectToDirectory() {
+      this.$router.push({ name: 'DirectoryPage' });
     },
     navigateBack() {
       // Define navigation logic here
