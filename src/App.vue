@@ -1,16 +1,16 @@
 <template>
   <v-app>
-    <MainLayout />
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-import MainLayout from './components/MainLayout.vue';
+import vuetify from './plugins/vuetify'
+import router from './router'; // Import the router
 
 export default {
   name: 'App',
-  components: {
-    MainLayout,
-  },
+  vuetify,
+  router,
 };
 </script>

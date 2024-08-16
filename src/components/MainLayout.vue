@@ -123,12 +123,17 @@
   :key="'box-' + index"
   cols="auto"
 >
-  <v-btn class="tool-box" :style="boxStyles[index - 1]">
+  <v-btn 
+    class="tool-box" 
+    :style="boxStyles[index - 1]" 
+    @click="handleBoxClick(index)"
+  >
     <div class="tool-box-content">
       <v-img 
         v-if="index === 1"
         src="../assets/sturppy.webp" 
         class="tool-box-image" 
+        @click="redirectToSturppy"
         contain 
       ></v-img>
       <div class="tool-box-text">
@@ -147,6 +152,7 @@
     </div>
   </v-btn>
 </v-col>
+
 
       </v-row>
       <v-img src="../assets/RightLamp.png" class="right-lamp" contain></v-img>
@@ -265,6 +271,9 @@ export default {
     };
   },
   methods: {
+    redirectToSturppy() {
+      this.$router.push({ name: 'SturppyPage' });
+    },
     navigateBack() {
       // Define navigation logic here
     },
@@ -906,7 +915,7 @@ body {
   left: 50px; /* Position close to the right */
   color: white;
   font-size: 28px;
-  font-family:monospace;
+  font-family: monospace;
 }
 
 .footer-text p {
