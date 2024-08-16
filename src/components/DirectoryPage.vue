@@ -12,7 +12,13 @@
   
         <!-- Squares Grid -->
         <div class="squares-grid">
-          <div class="square square-1"></div>
+            <div class="square square-1">
+                <!-- Textbox Container -->
+                <div class="textbox">
+                    <v-img src="../assets/ToolIcon.png" class="textbox-icon" contain height="40"></v-img>
+                    <span class="textbox-text">Sturppy</span>
+                </div>
+            </div>
           <div class="square square-2"></div>
           <div class="square square-3"></div>
           <div class="square square-4"></div>
@@ -54,44 +60,42 @@
             </v-row>
           </v-col>
         </v-row>
-  
-        <!-- Separator -->
-        <v-divider class="separator"></v-divider>
-  
+    </v-container>
+
         <!-- Bottom Section -->
-        <v-container fluid class="bottom-section">
-          <div class="quick-links-box">
-            <span class="quick-links">Quick Links</span>
-            <img src="../assets/LinkIcon.png" alt="Link Icon" class="link-icon">
-          </div>
-          
-          <!-- New larger box area -->
-          <div class="large-box">
-            <span class="large-box-text">Links</span>
-          </div>
-          
-          <div class="footer-text">
-            <p>2024 All Rights Reserved. Developed by edison.ai</p>
-          </div>
-          
-          <v-row class="contact" align="center" justify="center">
-            <v-img src="../assets/ContactBanner.png" class="contact-banner" contain></v-img>
-            <v-row class="contact-info" align="center" justify="space-around">
-              <v-col cols="auto">
-                <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
-                <p class="contact-heading"><u>Contact</u></p>
-              </v-col>
-              <v-col cols="auto">
-                <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
-                <p class="email-label">Email :</p>
-                <p class="email-address"><u>thomas@edison.ai</u></p>
-              </v-col>
-            </v-row>
-          </v-row>
-          
-          <v-img src="../assets/CatPaw.png" class="cat-paw" contain></v-img>
-        </v-container>
-      </v-container>
+
+<v-container fluid class="bottom-section">
+  <div class="quick-links-box">
+    <span class="quick-links">Quick Links</span>
+    <img src="../assets/LinkIcon.png" alt="Link Icon" class="link-icon">
+  </div>
+  
+  <!-- New larger box area -->
+  <div class="large-box">
+    <span class="large-box-text">Links</span>
+  </div>
+  
+  <div class="footer-text">
+    <p>2024 All Rights Reserved. Developed by edison.ai</p>
+  </div>
+  
+  <v-row class="contact" align="center" justify="center">
+    <v-img src="../assets/ContactBanner.png" class="contact-banner" contain></v-img>
+    <v-row class="contact-info" align="center" justify="space-around">
+      <v-col cols="auto">
+        <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
+        <p style="font-size: 63px; position: absolute; margin-left: 675px; margin-top: 7px; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
+      </v-col>
+      <v-col cols="auto">
+        <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
+        <p style="font-size: 34px; position: absolute; margin-left: -70px; margin-top: 140px; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
+        <p style="font-size: 24px; position: absolute; margin-left: -120px; margin-top: 200px; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
+      </v-col>
+    </v-row>
+  </v-row>
+  
+  <v-img src="../assets/CatPaw.png" class="cat-paw" contain></v-img>
+</v-container>
     </v-app>
   </template>
   
@@ -147,7 +151,7 @@
   
   .squares-grid {
     position: absolute;
-    top: 13%;
+    top: 15%;
     left: 10%;
     display: grid;
     grid-template-columns: repeat(3, 400px);
@@ -167,7 +171,34 @@
   background-size: cover; /* Ensures the image covers the box */
   background-position: center; /* Centers the image in the box */
   background-repeat: no-repeat; /* Prevents the image from repeating */
+  position: relative; /* For absolute positioning of the textbox */
 }
+
+.textbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #d2a075; /* Lightly-colored brown with some transparency */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.textbox-icon {
+  margin-right: 10px; /* Space between the icon and text */
+}
+
+.textbox-text {
+  font-size: 34px;
+  font-weight: bold;
+  color: rgb(87, 45, 4); /* White text color for contrast */
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration-line: underline;
+}
+
   
   .square:nth-child(odd) {
     background-color: #FFE4C4; /* Light color */
@@ -179,7 +210,7 @@
   
   .page-indicator {
   position: absolute;
-  top: 59%;
+  top: 78%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #FFFFE0; /* Same as directory header */
