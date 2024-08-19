@@ -79,7 +79,7 @@
         >
           <v-btn
             class="tag-btn"
-            :style="{ backgroundColor: '#edb774', color: 'black', border: '3px solid #a3613a' }"
+            :style="{ backgroundColor: '#edb774', color: 'black', border: '0.1875rem solid #a3613a' }"
           >
           </v-btn>
         </v-col>
@@ -90,7 +90,7 @@
         >
           <v-btn
             class="tag-btn"
-            :style="{ backgroundColor: '#edb774', color: 'black', border: '3px solid #a3613a' }"
+            :style="{ backgroundColor: '#edb774', color: 'black', border: '0.1875rem solid #a3613a' }"
           >
           </v-btn>
         </v-col>
@@ -192,7 +192,7 @@
         >
           <v-btn
             class="button-item"
-            :style="{ backgroundColor: '#edb774', color: 'black', border: '3px solid #a3613a', fontFamily: 'Shadows Into Light', fontSize: '16px' }"
+            :style="{ backgroundColor: '#edb774', color: 'black', border: '0.1875rem solid #a3613a', fontFamily: 'Shadows Into Light', fontSize: '1rem' }"
           >
             {{ label }}
           </v-btn>
@@ -229,12 +229,12 @@
     <v-row class="contact-info" align="center" justify="space-around">
       <v-col cols="auto">
         <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
-        <p style="font-size: 63px; position: absolute; margin-left: 675px; margin-top: 7px; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
+        <p style="font-size: 3.9375rem; position: absolute; margin-left: 42.1875rem; margin-top: 0.4375rem; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
       </v-col>
       <v-col cols="auto">
         <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
-        <p style="font-size: 34px; position: absolute; margin-left: -70px; margin-top: 140px; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
-        <p style="font-size: 24px; position: absolute; margin-left: -120px; margin-top: 200px; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
+        <p style="font-size: 2.125rem; position: absolute; margin-left: -4.375rem; margin-top: 8.75rem; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
+        <p style="font-size: 1.5rem; position: absolute; margin-left: -7.5rem; margin-top: 12.5rem; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
       </v-col>
     </v-row>
   </v-row>
@@ -261,12 +261,12 @@ export default {
         "Chat/Communication"
       ],
       boxStyles: [
-        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' },
-        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' },
-        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' },
-        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' },
-        { backgroundColor: '#B99976', height: '200px', width: '300px', border: '2px solid black' },
-        { backgroundColor: '#E5D3B3', height: '200px', width: '300px', border: '2px solid black' }
+        { backgroundColor: '#B99976', height: '12.5rem', width: '18.75rem', border: '0.125rem solid black' },
+        { backgroundColor: '#E5D3B3', height: '12.5rem', width: '18.75rem', border: '0.125rem solid black' },
+        { backgroundColor: '#B99976', height: '12.5rem', width: '18.75rem', border: '0.125rem solid black' },
+        { backgroundColor: '#E5D3B3', height: '12.5rem', width: '18.75rem', border: '0.125rem solid black' },
+        { backgroundColor: '#B99976', height: '12.5rem', width: '18.75rem', border: '0.125rem solid black' },
+        { backgroundColor: '#E5D3B3', height: '12.5rem', width: '18.75rem', border: '0.125rem solid black' }
       ],
     };
   },
@@ -294,7 +294,7 @@ body {
 }
 
 .separator {
-  border-top: 20px solid #4a2e0d;
+  border-top: 1.25rem solid #4a2e0d;
   margin: 0;
   position: relative; /* Position relative to ensure correct stacking */
   z-index: 1; /* Ensure separators are on top */
@@ -320,9 +320,9 @@ body {
 
 .header {
   position: absolute;
-  top: 10px; 
-  left: 10px; 
-  right: 20px;
+  top: 0.625rem; 
+  left: 0.625rem; 
+  right: 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -337,9 +337,9 @@ body {
 
 .header-title {
   font-family: 'Indie Flower', cursive;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: black;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .icons-col {
@@ -349,12 +349,12 @@ body {
 
 .icon-box {
   background-color: #edb774; 
-  border: 3px solid #a3613a;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border: 0.1875rem solid #a3613a;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem 0.625rem;
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 1.25rem;
   transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
 }
 
@@ -370,36 +370,36 @@ body {
 }
 
 .icon {
-  height: 30px;
+  width: 1.875rem;
 }
 
 .icon-text {
-  font-size: 22px; 
-  margin-left: 5px;
+  font-size: 1.375rem; 
+  margin-left: 0.3125rem;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
 }
 
 .slogan {
   position: relative;
-  margin-top: 20px; 
+  margin-top: 1.25rem; 
 }
 
 .slogan-cloud {
   width: 80%;
-  max-width: 800px; 
+  max-width: 50rem; 
   height: auto;
-  margin-top: -36px; 
-  margin-left: 51px;
+  margin-top: -2.25rem; 
+  margin-left: 3.1875rem;
 }
 
 .slogan-text {
   position: absolute;
-  top: 130px; 
+  top: 8.125rem; 
   left: 50%;
   font-family: 'Shadows Into Light', cursive;
   transform: translateX(-50%);
-  font-size: 41px; 
+  font-size: 2.5625rem; 
   color: white;
   width: 90%; 
   text-align: center;
@@ -408,34 +408,34 @@ body {
 
 .search-bar {
   position: relative;
-  margin-top: -135px;
+  margin-top: -8.4375rem;
 }
 
 .search-input {
   width: 100%;
-  max-width: 400px;
-  font-size: 18px; 
+  max-width: 25rem;
+  font-size: 1.125rem; 
 }
 
 .search-btn {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   font-family: 'Shadows Into Light', cursive;
-  font-size: 20px; 
+  font-size: 1.25rem; 
   font-weight: bold; 
 }
 
 .featured-tags-header {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   text-align: center; 
 }
 
 .featured-tags-text {
-  font-size: 40px; 
+  font-size: 2.5rem; 
   font-family: 'Shadows Into Light', cursive;
 }
 
 .featured-tags {
-  margin-top: 5px; 
+  margin-top: 0.3125rem; 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -444,17 +444,17 @@ body {
 .tag-btn {
   background-color: #edb774; 
   color: black;
-  height: 60px; 
-  width: 130px; 
-  margin: 5px;
-  border-radius: 15px;
-  font-size: 20px; 
+  height: 3.75rem; 
+  width: 8.125rem; 
+  margin: 0.3125rem;
+  border-radius: 0.9375rem;
+  font-size: 1.25rem; 
   font-family: 'Shadows Into Light', cursive;
-  border: 5px solid #a3613a; 
+  border: 0.3125rem solid #a3613a; 
 }
 
 .featured-tags > v-col:nth-child(-n+3) {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .cats {
@@ -463,21 +463,21 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px; 
+  padding: 0 1.25rem; 
 }
 
 .left-cat, .right-cat {
-  height: 420px; /* Reduced size for better visibility */
-  width: 420px; /* Reduced size for better visibility */
-  margin-top: -150px; /* Move cats up to reveal separators */
+  height: 26.25rem; /* Reduced size for better visibility */
+  width: 26.25rem; /* Reduced size for better visibility */
+  margin-top: -9.375rem; /* Move cats up to reveal separators */
 }
 
 .left-cat {
-  margin-left: -260px; 
+  margin-left: -16.25rem; 
 }
 
 .right-cat {
-  margin-right: -320px; 
+  margin-right: -20rem; 
 }
 
 .second-section {
@@ -489,7 +489,7 @@ body {
 
 .left-lamp, .right-lamp {
   position: absolute;
-  width: 100px; 
+  width: 6.25rem; 
   height: auto;
   box-shadow: none; 
 }
@@ -506,39 +506,39 @@ body {
 
 .featured-tool-box {
   background-color: #f3bd8e; 
-  padding: 20px;
-  border: 2px solid #391a01;
+  padding: 1.25rem;
+  border: 0.125rem solid #391a01;
   box-shadow: none; 
-  margin-top: 25px;
+  margin-top: 1.5625rem;
   border-radius: 0; 
 }
 
 .featured-tool-heading {
   font-family: 'Indie Flower', cursive;
-  font-size: 46px;
+  font-size: 2.875rem;
   color: #9d6b00; 
   font-weight: bold;
   margin: 0;
 }
 
 .tool-icon {
-  height: 40px;
+  height: 2.5rem;
 }
 
 .tool-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0px; /* Adjusted gap between boxes */
-  margin: 80px auto; /* Center horizontally */
-  max-width: 1200px; /* Restrict width to center properly */
-  margin-left: 200px;
+  gap: 0rem; /* Adjusted gap between boxes */
+  margin: 5rem auto; /* Center horizontally */
+  max-width: 75rem; /* Restrict width to center properly */
+  margin-left: 12.5rem;
 }
 
 .tool-box {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 0;
-  border: 2px solid black;
+  border: 0.125rem solid black;
   position: relative;
   overflow: hidden;
 }
@@ -562,7 +562,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   box-sizing: border-box;
   text-align: center;
   z-index: 1; /* Ensure text is above the image */
@@ -570,16 +570,16 @@ body {
 
 .tool-title {
   font-family: 'Shadows Into Light', cursive;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: black;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .tool-description {
-  font-size: 12px; /* Adjust as needed */
+  font-size: 0.75rem; /* Adjust as needed */
   color: black;
-  margin-top: 5px;
-  padding: 0 10px;
+  margin-top: 0.3125rem;
+  padding: 0 0.625rem;
 }
 
 .separator.second {
@@ -589,9 +589,9 @@ body {
 
 .sleeping-cat {
   position: absolute;
-  bottom: -80px; 
+  bottom: -5rem; 
   left: 1%; 
-  height: 200px; 
+  height: 12.5rem; 
   z-index: 2;
 }
 
@@ -603,22 +603,22 @@ body {
   background-repeat: no-repeat; /* Avoid repeating the image */
   background-color: #f3bd8e; /* Fallback color to fill the space not covered by the image */
   position: relative;
-  padding-top: 20px; /* Adjust padding to accommodate the "Tag Categories" bar */
+  padding-top: 1.25rem; /* Adjust padding to accommodate the "Tag Categories" bar */
 }
 .buttons-column {
   flex-direction: column;
   align-items: flex-end; 
   position: absolute;
-  width: 245px;
-  top: 70px; 
-  left: 420px;
-  height: calc(100vh - 40px); 
+  width: 15.3125rem;
+  top: 4.375rem; 
+  left: 26.25rem;
+  height: calc(100vh - 2.5rem); 
 }
 
 .button-item {
   width: 100%;
   box-sizing: border-box; 
-  padding: 0 3px; 
+  padding: 0 0.1875rem; 
   font-weight: bold;
   overflow: hidden; 
 }
@@ -631,38 +631,38 @@ body {
 }
 
 .button-item .v-btn img {
-  margin-right: 5px; 
+  margin-right: 0.3125rem; 
 }
 
 .button-sticker {
-  height: 24px; 
+  height: 1.5rem; 
 }
 
 .box-container {
   position: relative;
-  margin-right: 260px; 
+  margin-right: 16.25rem; 
 }
 
 .tag-categories-box {
   background-color: #f3bd8e; 
-  padding: 10px;
-  border: 2px solid #391a01;
-  border-radius: 5px;
+  padding: 0.625rem;
+  border: 0.125rem solid #391a01;
+  border-radius: 0.3125rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 75rem;
 }
 
 .tag-categories-icon {
-  height: 60px;
-  margin-right: 10px;
+  height: 3.75rem;
+  margin-right: 0.625rem;
 }
 
 .tag-categories-heading {
   font-family: 'Indie Flower', cursive;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #9d6b00; 
   font-weight: bold;
   margin: 0;
@@ -670,19 +670,19 @@ body {
 
 .pick-one-container {
   position: relative;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .box-container {
   position: relative;
-  margin-right: 420px;
-  width: 460px; 
+  margin-right: 26.25rem;
+  width: 28.75rem; 
 }
 
 .box-background {
-  height: calc(100% + 15px); 
+  height: calc(100% + 0.9375rem); 
   width: auto; 
 }
 
@@ -699,10 +699,10 @@ body {
 .small-box {
   position: absolute;
   background-color: #f3bd8e; /* Match background color of Tag Categories box */
-  border: 3px solid #e8940c; /* Match border color of Tag Categories box */
-  border-radius: 10px;
-  width: 60px;
-  height: 20px;
+  border: 0.1875rem solid #e8940c; /* Match border color of Tag Categories box */
+  border-radius: 0.625rem;
+  width: 3.75rem;
+  height: 1.25rem;
   box-sizing: border-box;
   /* Adjust sizes and positions as needed */
 }
@@ -711,16 +711,16 @@ body {
 .small-box:nth-child(1) {
   top: 30%;
   left: 10%;
-  width: 80px;
-  height: 35px;
+  width: 5rem;
+  height: 2.1875rem;
 }
 
 /* Box 2 */
 .small-box:nth-child(2) {
   top: 28%;
   left: 100%;
-  width: 73px;
-  height: 35px;
+  width: 4.5625rem;
+  height: 2.1875rem;
   transform: translateX(-100%);
 }
 
@@ -728,141 +728,141 @@ body {
 .small-box:nth-child(3) {
   top: 52%;
   left: 12%;
-  width: 100px;
-  height: 35px;
+  width: 6.25rem;
+  height: 2.1875rem;
 }
 
 /* Box 4 */
 .small-box:nth-child(4) {
   top: 34%;
   left: 35%;
-  width: 70px;
-  height: 37px;
+  width: 4.375rem;
+  height: 2.3125rem;
 }
 
 /* Box 5 */
 .small-box:nth-child(5) {
   top: 55%;
   left: 45%;
-  width: 90px;
-  height: 34px;
+  width: 5.625rem;
+  height: 2.125rem;
 }
 
 /* Box 6 */
 .small-box:nth-child(6) {
   top: 70%;
   left: 23%;
-  width: 80px;
-  height: 35px;
+  width: 5rem;
+  height: 2.1875rem;
 }
 
 /* Box 7 */
 .small-box:nth-child(7) {
   top: 65%;
   left: 83%;
-  width: 85px;
-  height: 33px;
+  width: 5.3125rem;
+  height: 2.0625rem;
 }
 
 /* Box 8 */
 .small-box:nth-child(8) {
   top: 108%;
   left: 10%;
-  width: 70px;
-  height: 37px;
+  width: 4.375rem;
+  height: 2.3125rem;
 }
 
 /* Box 9 */
 .small-box:nth-child(9) {
   top: 78%;
   left: 53%;
-  width: 90px;
-  height: 35px;
+  width: 5.625rem;
+  height: 2.1875rem;
 }
 
 /* Box 10 */
 .small-box:nth-child(10) {
   top: 28%;
   left: 55%;
-  width: 75px;
-  height: 34px;
+  width: 4.6875rem;
+  height: 2.125rem;
 }
 
 /* Box 11 */
 .small-box:nth-child(11) {
   top: 45%;
   left: 72%;
-  width: 80px;
-  height: 35px;
+  width: 5rem;
+  height: 2.1875rem;
 }
 
 /* Box 12 */
 .small-box:nth-child(12) {
   top: 85%;
   left: 85%;
-  width: 65px;
-  height: 34px;
+  width: 4.0625rem;
+  height: 2.125rem;
 }
 
 /* Box 13 */
 .small-box:nth-child(13) {
   top: 94%;
   left: 34%;
-  width: 85px;
-  height: 34px;
+  width: 5.3125rem;
+  height: 2.125rem;
 }
 
 /* Box 14 */
 .small-box:nth-child(14) {
   top: 115%;
   left: 50%;
-  width: 80px;
-  height: 35px;
+  width: 5rem;
+  height: 2.1875rem;
 }
 
 /* Box 15 */
 .small-box:nth-child(15) {
   top: 103%;
   left: 75%;
-  width: 90px;
-  height: 33px;
+  width: 5.625rem;
+  height: 2.0625rem;
 }
 
 .pick-one-content {
   position: absolute;
-  top: 15px; 
-  left: 15px; 
+  top: 0.9375rem; 
+  left: 0.9375rem; 
   z-index: 10; 
 }
 
 .sticker-icon {
-  height: 70px; /* Adjust size if needed */
-  right: 130px;
+  height: 4.375rem; /* Adjust size if needed */
+  right: 8.125rem;
 }
 
 .pick-one-text {
   font-family: 'Shadows Into Light', cursive;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   color: rgb(87, 45, 4);
   position: absolute;
-  top: 5px; /* Adjust to fit within Box.png */
-  left: 63px; /* Adjust to fit within Box.png */
+  top: 0.3125rem; /* Adjust to fit within Box.png */
+  left: 3.9375rem; /* Adjust to fit within Box.png */
   z-index: 20; /* Ensure it is above Sticker.png */
 }
 
 .walking-cat {
   position: absolute;
-  bottom: 13px; /* Adjust as needed */
-  right: 130px;
-  height: 190px; /* Bigger size */
+  bottom: 0.8125rem; /* Adjust as needed */
+  right: 8.125rem;
+  height: 11.875rem; /* Bigger size */
 }
 
 .catalog-icon {
   position: absolute;
-  top: 98px; /* Adjust as needed */
-  left: 587px;
-  height: 26px; /* Bigger size */
+  top: 6.125rem; /* Adjust as needed */
+  left: 36.6875rem;
+  height: 1.625rem; /* Bigger size */
 }
 
 .bottom-section {
@@ -876,48 +876,48 @@ body {
 
 .quick-links-box {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 3.125rem;
+  left: 3.125rem;
   background-color: #f3bd8e; 
-  padding: 10px;
-  border: 4px solid #391a01; 
+  padding: 0.625rem;
+  border: 0.25rem solid #391a01; 
   display: flex;
   align-items: center;
   color: rgb(87, 45, 4);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
-  box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0.9375rem 0.75rem 0.125rem rgba(0, 0, 0, 0.6);
 }
 
 .large-box {
   position: absolute;
-  top: 250px; /* Adjust as needed to position below the quick links box */
-  left: 50px;
-  width: 400px; /* Width to make it square-like */
-  height: 300px; /* Height to match width */
+  top: 15.625rem; /* Adjust as needed to position below the quick links box */
+  left: 3.125rem;
+  width: 25rem; /* Width to make it square-like */
+  height: 18.75rem; /* Height to match width */
   background-color: #f3bd8e; 
-  border: 4px solid #391a01; 
+  border: 0.25rem solid #391a01; 
   display: flex;
   align-items: center;
   justify-content: center;
   color: rgb(87, 45, 4);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
-  box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1.875rem 0.75rem 0.125rem rgba(0, 0, 0, 0.6);
 }
 
 .large-box-text {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .footer-text {
   position: absolute;
-  bottom: 20px; /* Position close to bottom */
-  left: 50px; /* Position close to the right */
+  bottom: 1.25rem; /* Position close to bottom */
+  left: 3.125rem; /* Position close to the right */
   color: white;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: monospace;
 }
 
@@ -926,12 +926,12 @@ body {
 }
 
 .contact {
-  margin: 20px 0;
+  margin: 1.25rem 0;
   position: relative;
 }
 
 .contact-banner {
-  width: 520px;
+  width: 32.5rem;
   height: auto;
   position: absolute;
   right: 0;
@@ -947,21 +947,21 @@ body {
 }
 
 .contact-icon {
-  height: 50px;
+  height: 3.125rem;
   position: absolute;
-  margin-left: 600px;
-  margin-top: 20px;
+  margin-left: 37.5rem;
+  margin-top: 1.25rem;
 }
 
 .email-icon {
-  height: 50px;
+  height: 3.125rem;
   position: absolute;
-  margin-left: -145px;
-  margin-top: 147px;
+  margin-left: -9.0625rem;
+  margin-top: 9.1875rem;
 }
 
 .contact-info p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
   margin: 0;
 }
@@ -975,53 +975,53 @@ body {
   bottom: 0;
   left: 58%;
   transform: translateX(-50%);
-  height: 170px;
+  height: 10.625rem;
 }
 
 
 /* Responsive Styles */
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
   .header-title {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 
   .icon-text {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .slogan-text {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .search-input {
-    max-width: 300px;
-    font-size: 16px;
+    max-width: 18.75rem;
+    font-size: 1rem;
   }
 
   .search-btn {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .featured-tags-text {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 
   .tag-btn {
-    height: 50px;
-    width: 120px;
-    font-size: 18px;
+    height: 3.125rem;
+    width: 7.5rem;
+    font-size: 1.125rem;
   }
 
   .left-cat, .right-cat {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
   }
 
   .tool-box {
-  height: 200px; 
-  width: 200px; 
+  height: 12.5rem; 
+  width: 12.5rem; 
   border-radius: 0;
-  border: 2px solid black; 
+  border: 0.125rem solid black; 
   position: relative; /* Ensure positioning works correctly */
   overflow: hidden; /* Hide anything overflowing */
 }
@@ -1044,7 +1044,7 @@ body {
 .tool-box-text {
   display: flex;
   align-items: center;
-  padding: 10px; /* Add some padding */
+  padding: 0.625rem; /* Add some padding */
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   position: absolute;
   bottom: 0;
@@ -1053,112 +1053,112 @@ body {
 }
 
 .tool-icon {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .tool-title {
   font-family: 'Shadows Into Light', cursive;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: black;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .tool-description {
-  font-size: 12px; /* Smaller font size for description */
+  font-size: 0.75rem; /* Smaller font size for description */
   color: black;
-  margin-top: 5px;
-  padding: 0 10px;
+  margin-top: 0.3125rem;
+  padding: 0 0.625rem;
 }
 
 
   .tool-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .header-title {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .icon-text {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .slogan-text {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .search-input {
-    max-width: 250px;
-    font-size: 14px;
+    max-width: 15.625rem;
+    font-size: 0.875rem;
   }
 
   .search-btn {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .featured-tags-text {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .tag-btn {
-    height: 40px;
-    width: 100px;
-    font-size: 16px;
+    height: 2.5rem;
+    width: 6.25rem;
+    font-size: 1rem;
   }
 
   .left-cat, .right-cat {
-    height: 250px;
-    width: 250px;
+    height: 15.625rem;
+    width: 15.625rem;
   }
 
   .tool-box {
-    height: 150px;
-    width: 150px;
+    height: 9.375rem;
+    width: 9.375rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .header-title {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   .icon-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .slogan-text {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .search-input {
-    max-width: 200px;
-    font-size: 12px;
+    max-width: 12.5rem;
+    font-size: 0.75rem;
   }
 
   .search-btn {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .featured-tags-text {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .tag-btn {
-    height: 30px;
-    width: 80px;
-    font-size: 14px;
+    height: 1.875rem;
+    width: 5rem;
+    font-size: 0.875rem;
   }
 
   .left-cat, .right-cat {
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
   }
 
   .tool-box {
-    height: 120px;
-    width: 120px;
+    height: 7.5rem;
+    width: 7.5rem;
   }
 }
 </style>

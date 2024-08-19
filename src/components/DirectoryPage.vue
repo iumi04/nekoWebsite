@@ -1,5 +1,6 @@
 <template>
     <v-app>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <v-container fluid class="top-section">
         <!-- Background Image -->
         <v-img src="../assets/NewBackground.png" class="background" cover></v-img>
@@ -17,6 +18,7 @@
                 <div class="textbox">
                     <v-img src="../assets/ToolIcon.png" class="textbox-icon" contain height="40"></v-img>
                     <span class="textbox-text">Sturppy</span>
+                    <p class="box1text">Sturppy is an AI-driven tool for quick and efficient financial modeling, used by over 5,000 companies globally.</p>
                 </div>
             </div>
           <div class="square square-2"></div>
@@ -141,6 +143,10 @@
     margin-right: 10px;
   }
   
+.box1text {
+  color: black; font-weight: bold; margin-right: 20px; margin-top: 40px; font-family: monospace; position: absolute;
+}
+
   .directory-text {
     font-size: 58px;
     font-weight: bold;
@@ -166,6 +172,10 @@
     border: 4px solid orange;
   }
 
+  .link-icon {
+    color: blue;
+  }
+
   .square.square-1 {
   background-image: url('../assets/sturppy.webp'); /* Path to your image */
   background-size: cover; /* Ensures the image covers the box */
@@ -188,7 +198,8 @@
 }
 
 .textbox-icon {
-  margin-right: 10px; /* Space between the icon and text */
+  margin-right: 5px; /* Space between the icon and text */
+  margin-bottom: 110px;
 }
 
 .textbox-text {
@@ -197,6 +208,8 @@
   color: rgb(87, 45, 4); /* White text color for contrast */
   font-family: 'Shadows Into Light', cursive;
   text-decoration-line: underline;
+  margin-right: 220px;
+  margin-bottom: 120px;
 }
 
   
@@ -250,6 +263,10 @@
     z-index: 1;
   }
   
+.title-cat {
+  height: 50px;
+}
+
   .title-col {
     display: flex;
     align-items: center;
@@ -301,7 +318,7 @@
   }
   
   .icon {
-    height: 30px;
+    width: 30px;
   }
   
   .icon-text {
@@ -429,5 +446,336 @@
     transform: translateX(-50%);
     height: 170px;
   }
+
+  @media (max-width: 600px) {
+    .top-section {
+    position: relative;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .directory-header {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFE0; /* Very light yellow */
+    border: 4px solid #8B4513; /* Dark brown border */
+    padding: 0px 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .header-icon {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .directory-text {
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 3px;
+    color: #8B4513; /* Dark brown color */
+  }
+  
+  .squares-grid {
+    position: absolute;
+    top: 27%;
+    left: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 85px);
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    z-index: 1; /* Ensure it is above the background */
+  }
+  
+  .square {
+    width: 85px;
+    height: 85px;
+    border: 4px solid orange;
+  }
+
+  .square.square-1 {
+  background-image: url('../assets/sturppy.webp'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the box */
+  background-position: center; /* Centers the image in the box */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  position: relative; /* For absolute positioning of the textbox */
+}
+
+.textbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #d2a075; /* Lightly-colored brown with some transparency */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.textbox-icon {
+  width: 10px;
+  margin-top: 112px;
+}
+
+.textbox-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 120px;
+  color: rgb(87, 45, 4); /* White text color for contrast */
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration-line: underline;
+}
+
+.box1text {
+  display: none;
+}
+  .square:nth-child(odd) {
+    background-color: #FFE4C4; /* Light color */
+  }
+  
+  .square:nth-child(even) {
+    background-color: #CFB095; /* Slightly darker color */
+  }
+  
+  .page-indicator {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFFFE0; /* Same as directory header */
+  border: 4px solid #8B4513; /* Dark brown border */
+  padding: 5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: 'Monospace', monospace;
+  color: #8B4513;
+}
+
+.page-number {
+  margin: 0 15px; /* Space out the numbers */
+  font-weight: bold;
+}
+
+.page-number.current {
+  background-color: orange;
+  color: #8B4513;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+  
+  .header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 1;
+  }
+
+  .title-cat {
+    width: 40px;
+  }
+  
+  .title-col {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-title {
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .separator {
+    border-top: 20px solid #4a2e0d;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .icons-col {
+    position: absolute;
+    align-items: center;
+  }
+  
+  .top-icons {
+    margin-left: 132px;
+    margin-top: 1px;
+  }
+
+  .icon-box {
+    background-color: #edb774;
+    border: 3px solid #a3613a;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .icon-button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 5px;
+  }
+  
+  .icon-box:hover {
+    background-color: #d9a56e;
+    border-color: #8a4c26;
+  }
+  
+  .icon {
+    width: 16px;
+  }
+  
+  .icon-text {
+    font-size: 12px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+  }
+  
+  .bottom-section {
+    height: 100vh;
+    background-image: url('../assets/BottomBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    align-items: center;
+  }
+  
+  .quick-links-box {
+    position: absolute;
+    top: 20px;
+    left: 125px;
+    background-color: #f3bd8e;
+    padding: 5px;
+    border: 4px solid #391a01;
+    display: flex;
+    align-items: center;
+    color: rgb(87, 45, 4);
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .large-box {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    width: 230px;
+    height: 120px;
+    background-color: #f3bd8e; /* Less bright yellow background */
+    border: 4px solid #391a01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(87, 45, 4);
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .link-icon {
+    width: 20px;
+  }
+  
+  .large-box-text {
+    font-size: 40px;
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 20px;
+    left: 2px;
+    color: white;
+    font-size: 9px;
+    font-family: monospace;
+  }
+  
+  .footer-text p {
+    margin: 0;
+  }
+  
+  .contact {
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .contact-banner {
+    width: 360px;
+    position: absolute;
+    top: 200px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 40%;
+    width: 100px;
+  }
+  
+  .contact-icon {
+    width: 40px;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 230px;
+  }
+  
+  .email-icon {
+    width: 50px;
+    position: absolute;
+    margin-top: 350px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    right: 5px;
+    top: 220px;
+    position: absolute;
+  }
+  
+  .email-label {
+    font-size: 14px;
+    color: yellow;
+    bottom: 20px;
+  }
+  
+  .email-address {
+    font-size: 14px;
+    color: yellow;
+  }
+  
+  .cat-paw {
+    position: absolute;
+    bottom: 0;
+    left: 78%;
+    transform: translateX(-50%);
+    height: 140px;
+  }
+
+  }
+
   </style>
   

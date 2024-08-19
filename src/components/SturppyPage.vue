@@ -27,7 +27,7 @@
               <v-col class="tag-box" cols="auto">
                 <v-img src="../assets/TagIcon.png" class="tag-icon" contain></v-img>
                 <div class="tag-text-box">
-                  <span class="tag-text" style="margin-right: 50px; margin-top: 30px;">Finance</span>
+                  <span class="tag-text" style="margin-right: 3.125rem; margin-top: 1.875rem;">Finance</span>
                 </div>
               </v-col>
             </v-row>
@@ -121,12 +121,12 @@
         <v-row class="contact-info" align="center" justify="space-around">
           <v-col cols="auto">
             <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
-            <p style="font-size: 63px; position: absolute; margin-left: 675px; margin-top: 7px; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
+            <p style="font-size: 3.9375rem; position: absolute; margin-left: 42.1875rem; margin-top: 0.4375rem; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
           </v-col>
           <v-col cols="auto">
             <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
-            <p style="font-size: 34px; position: absolute; margin-left: -70px; margin-top: 140px; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
-            <p style="font-size: 24px; position: absolute; margin-left: -120px; margin-top: 200px; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
+            <p style="font-size: 2.125rem; position: absolute; margin-left: -4.375rem; margin-top: 8.75rem; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
+            <p style="font-size: 1.5rem; position: absolute; margin-left: -7.5rem; margin-top: 12.5rem; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
           </v-col>
         </v-row>
       </v-row>
@@ -166,7 +166,7 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  max-width: 1600px;
+  max-width: 100rem;
   z-index: 1; /* Lower z-index to stay behind other content */
 }
 
@@ -180,29 +180,29 @@ export default {
 .sturppy-card {
   background-color: #f3bd8e;
   color: #9d6b00;
-  border: 5px solid #391a01;
-  border-radius: 5px;
-  padding: 5px;
+  border: 0.3125rem solid #391a01;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
 }
 
 .sturppy-title {
   font-family: 'Indie Flower', cursive;
-  font-size: 46px;
+  font-size: 2.875rem;
   color: #4a2e0d;
   font-weight: bold;
   margin: 0;
   text-decoration: underline;
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 
 .sturppy-icon {
-  height: 70px;
-  margin-left: -25px;
+  height: 4.375rem;
+  margin-left: -1.5625rem;
 }
 
 .sturppy-image-row {
@@ -215,36 +215,36 @@ export default {
 }
 
 .sturppy-image {
-  border: 5px solid #f3bd8e; /* Beige border */
-  border-radius: 5px;
-  width: 800px; /* Larger size */
-  margin-top: -30px;
-  margin-left: 37px;
+  border: 0.3125rem solid #f3bd8e; /* Beige border */
+  border-radius: 0.3125rem;
+  width: 50rem; /* Larger size */
+  margin-top: -1.875rem;
+  margin-left: 2.3125rem;
   height: auto; /* Maintain aspect ratio */
 }
 
 .sturppy-image-col {
-  margin-right: 20px; /* Space between image and sections */
+  margin-right: 1.25rem; /* Space between image and sections */
 }
 
 .tags-link-section {
   display: flex;
   flex-direction: column;
-  margin-left: 20px; /* Space between image and sections */
+  margin-left: 1.25rem; /* Space between image and sections */
   z-index: 2; /* Higher z-index to be on top of the blackboard */
 }
 
 .tags-section {
-  margin-bottom: 20px; /* Space between tags and links */
+  margin-bottom: 1.25rem; /* Space between tags and links */
 }
 
 .tags-heading {
-  font-size: 54px;
+  font-size: 3.375rem;
   font-family: 'Shadows Into Light', cursive;
   text-decoration-line: underline;  
   font-weight: bold;
   color: #b98004; 
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .tags {
@@ -255,17 +255,17 @@ export default {
 .tag-box {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   background-color: #f5a623; /* More orange background */
-  border: 4px solid #f3bd8e;
-  border-radius: 5px;
-  padding: 5px;
-  margin-right: 70px;
+  border: 0.25rem solid #f3bd8e;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem;
+  margin-right: 4.375rem;
 }
 
 .tag-icon {
-  height: 40px; /* Adjust size as needed */
-  margin-right: 10px; /* Space between icon and text */
+  height: 2.5rem; /* Adjust size as needed */
+  margin-right: 0.625rem; /* Space between icon and text */
 }
 
 .tag-text-box {
@@ -273,18 +273,18 @@ export default {
 }
 
 .tag-text {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
   font-family: 'Indie Flower';
   color: #4a2e0d; /* Darker text color */
 }
 
 .link-section {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .link-heading {
-  font-size: 54px;
+  font-size: 3.375rem;
   font-family: 'Shadows Into Light', cursive;
   text-decoration-line: underline;
   font-weight: bold;
@@ -292,7 +292,7 @@ export default {
 }
 
 .link-url {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: 'Indie Flower', cursive;
   text-decoration-line: underline;
   color: #eed9c4; 
@@ -302,21 +302,21 @@ export default {
   position: absolute;
   top: 47%; /* Adjust as needed */
   left: 10%;
-  transform: translateY(20px); /* Adjust spacing as needed */
+  transform: translateY(1.25rem); /* Adjust spacing as needed */
   z-index: 2; /* Ensure it stays above the background but below other elements */
 }
 
 .description-heading {
-  font-size: 74px;
+  font-size: 4.625rem;
   font-family: 'Shadows Into Light', cursive;
   text-decoration-line: underline;
   font-weight: bold;
   color: #b98004; 
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .description-text {
-  font-size: 33px;
+  font-size: 2.0625rem;
   font-family: 'Indie Flower', cursive;
 
   color: #eed9c4; /* Yellowish gold color */
@@ -331,9 +331,9 @@ export default {
 
 .header {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 20px;
+  top: 0.625rem;
+  left: 0.625rem;
+  right: 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -348,9 +348,9 @@ export default {
 
 .header-title {
   font-family: 'Indie Flower', cursive;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: black;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .icons-col {
@@ -359,11 +359,11 @@ export default {
 }
 
 .top-icons {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .separator {
-  border-top: 20px solid #4a2e0d;
+  border-top: 1.25rem solid #4a2e0d;
   margin: 0;
   position: relative;
   z-index: 1;
@@ -371,12 +371,12 @@ export default {
 
 .icon-box {
   background-color: #edb774;
-  border: 3px solid #a3613a;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border: 0.1875rem solid #a3613a;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem 0.625rem;
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 1.25rem;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -392,12 +392,12 @@ export default {
 }
 
 .icon {
-  height: 30px;
+  width: 1.875rem;
 }
 
 .icon-text {
-  font-size: 22px;
-  margin-left: 5px;
+  font-size: 1.375rem;
+  margin-left: 0.3125rem;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
 }
@@ -413,48 +413,48 @@ export default {
 
 .quick-links-box {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 3.125rem;
+  left: 3.125rem;
   background-color: #f3bd8e;
-  padding: 10px;
-  border: 4px solid #391a01;
+  padding: 0.625rem;
+  border: 0.25rem solid #391a01;
   display: flex;
   align-items: center;
   color: rgb(87, 45, 4);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
-  box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0.9375rem 0.75rem 0.125rem rgba(0, 0, 0, 0.6);
 }
 
 .large-box {
   position: absolute;
-  top: 250px;
-  left: 50px;
-  width: 400px;
-  height: 300px;
+  top: 15.625rem;
+  left: 3.125rem;
+  width: 25rem;
+  height: 18.75rem;
   background-color: #f3bd8e; /* Less bright yellow background */
-  border: 4px solid #391a01;
+  border: 0.25rem solid #391a01;
   display: flex;
   align-items: center;
   justify-content: center;
   color: rgb(87, 45, 4);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
-  box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1.875rem 0.75rem 0.125rem rgba(0, 0, 0, 0.6);
 }
 
 .large-box-text {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .footer-text {
   position: absolute;
-  bottom: 20px;
-  left: 50px;
+  bottom: 1.25rem;
+  left: 3.125rem;
   color: white;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: monospace;
 }
 
@@ -463,12 +463,12 @@ export default {
 }
 
 .contact {
-  margin: 20px 0;
+  margin: 1.25rem 0;
   position: relative;
 }
 
 .contact-banner {
-  width: 520px;
+  width: 32.5rem;
   height: auto;
   position: absolute;
   right: 0;
@@ -484,21 +484,21 @@ export default {
 }
 
 .contact-icon {
-  height: 50px;
+  height: 3.125rem;
   position: absolute;
-  margin-left: 600px;
-  margin-top: 20px;
+  margin-left: 37.5rem;
+  margin-top: 1.25rem;
 }
 
 .email-icon {
-  height: 50px;
+  height: 3.125rem;
   position: absolute;
-  margin-left: -145px;
-  margin-top: 147px;
+  margin-left: -9.0625rem;
+  margin-top: 9.1875rem;
 }
 
 .contact-info p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
   margin: 0;
 }
@@ -512,25 +512,25 @@ export default {
   bottom: 0;
   left: 58%;
   transform: translateX(-50%);
-  height: 170px;
+  height: 10.625rem;
 }
 
 /* New Styles for Bottom Left Images */
 .bottom-left-images {
   position: absolute;
-  bottom: 20px; /* Adjust this value to position the images as desired */
-  left: 20px; /* Adjust this value to position the images as desired */
+  bottom: 1.25rem; /* Adjust this value to position the images as desired */
+  left: 1.25rem; /* Adjust this value to position the images as desired */
   display: flex;
   align-items: center;
   z-index: 2; /* Ensure they appear above the background */
 }
 
 .cat-image {
-  height: 400px; /* Adjust size as needed */
+  height: 25rem; /* Adjust size as needed */
 }
 
 .ball-image {
-  height: 250px; /* Adjust size as needed */
-  margin-top: 200px;
+  height: 15.625rem; /* Adjust size as needed */
+  margin-top: 12.5rem;
 }
 </style>
