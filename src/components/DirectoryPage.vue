@@ -458,7 +458,7 @@
   
   .directory-header {
     position: absolute;
-    top: 12%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #FFFFE0; /* Very light yellow */
@@ -467,6 +467,7 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
+    height: 50px;
     z-index: 1;
   }
   
@@ -590,6 +591,7 @@
 
   .title-cat {
     width: 40px;
+    margin-right: -20px;
   }
   
   .title-col {
@@ -599,7 +601,7 @@
   
   .header-title {
     font-family: 'Indie Flower', cursive;
-    font-size: 18px;
+    font-size: 14px;
     color: black;
   }
   
@@ -776,6 +778,352 @@
   }
 
   }
+
+  /* TABLET VIEW */
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    .top-section {
+    position: relative;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .directory-header {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFE0; /* Very light yellow */
+    border: 4px solid #8B4513; /* Dark brown border */
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .header-icon {
+    width: 45px;
+    margin-right: 10px;
+  }
+  
+.box1text {
+  display: none;
+}
+
+  .directory-text {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 7px;
+    color: #8B4513; /* Dark brown color */
+  }
+  
+  .squares-grid {
+    position: absolute;
+    top: 19%;
+    left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 190px);
+    grid-row-gap: 25px;
+    grid-column-gap: 20px;
+    z-index: 1; /* Ensure it is above the background */
+  }
+  
+  .square {
+    width: 190px;
+    height: 190px;
+    border: 4px solid orange;
+  }
+
+  .link-icon {
+    color: blue;
+  }
+
+  .square.square-1 {
+  background-image: url('../assets/sturppy.webp'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the box */
+  background-position: center; /* Centers the image in the box */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  position: relative; /* For absolute positioning of the textbox */
+}
+
+.textbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #d2a075; /* Lightly-colored brown with some transparency */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.textbox-icon {
+  margin-right: 5px; /* Space between the icon and text */
+  margin-bottom: 17px;
+  position: absolute;
+  margin-left: -15px;
+}
+
+.textbox-text {
+  font-size: 34px;
+  font-weight: bold;
+  color: rgb(87, 45, 4); /* White text color for contrast */
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration-line: underline;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+  
+  .square:nth-child(odd) {
+    background-color: #FFE4C4; /* Light color */
+  }
+  
+  .square:nth-child(even) {
+    background-color: #CFB095; /* Slightly darker color */
+  }
+  
+  .page-indicator {
+  position: absolute;
+  top: 81%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFFFE0; /* Same as directory header */
+  border: 4px solid #8B4513; /* Dark brown border */
+  padding: 2px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: 'Monospace', monospace;
+  color: #8B4513;
+}
+
+.page-number {
+  margin: 0 15px; /* Space out the numbers */
+  font-weight: bold;
+}
+
+.page-number.current {
+  background-color: orange;
+  color: #8B4513;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+  
+  .header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 1;
+  }
+  
+.title-cat {
+  width: 50px;
+}
+
+  .title-col {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-title {
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    color: black;
+    margin-left: 20px;
+  }
+  
+  .icons-col {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-icons {
+    margin-right: 10px;
+  }
+  
+  .separator {
+    border-top: 20px solid #4a2e0d;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .icon-box {
+    background-color: #edb774;
+    border: 3px solid #a3613a;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .icon-button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .icon-box:hover {
+    background-color: #d9a56e;
+    border-color: #8a4c26;
+  }
+  
+  .icon {
+    width: 30px;
+  }
+  
+  .icon-text {
+    font-size: 22px;
+    margin-left: 5px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+  }
+  
+  .bottom-section {
+    height: 100vh;
+    background-image: url('../assets/BottomBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    align-items: center;
+  }
+  
+  .quick-links-box {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    background-color: #f3bd8e;
+    padding: 5px;
+    border: 4px solid #391a01;
+    display: flex;
+    align-items: center;
+    color: rgb(87, 45, 4);
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
+    width: 180px;
+    height: 100px;
+  }
+  
+  .large-box {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    width: 280px;
+    height: 230px;
+    background-color: #f3bd8e; /* Less bright yellow background */
+    border: 4px solid #391a01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(87, 45, 4);
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .link-icon {
+    width: 30px;
+  }
+  
+  .large-box-text {
+    font-size: 40px;
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 20px;
+    left: 2px;
+    color: white;
+    font-size: 19px;
+    font-family: monospace;
+  }
+  
+  .footer-text p {
+    margin: 0;
+  }
+  
+  .contact {
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .contact-banner {
+    width: 360px;
+    position: absolute;
+    top: -10px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100px;
+    margin-top: -240px;
+    margin-right: -380px;
+  }
+  
+  .contact-icon {
+    width: 40px;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 230px;
+  }
+  
+  .email-icon {
+    width: 50px;
+    position: absolute;
+    margin-top: 350px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    right: 5px;
+    top: 220px;
+    position: absolute;
+  }
+  
+  .email-label {
+    font-size: 14px;
+    color: yellow;
+    bottom: 20px;
+  }
+  
+  .email-address {
+    font-size: 14px;
+    color: yellow;
+  }
+  
+  .cat-paw {
+    position: absolute;
+    bottom: 0;
+    left: 74%;
+    transform: translateX(-50%);
+    height: 140px;
+  }
+  }
+
+
 
   </style>
   

@@ -27,7 +27,7 @@
               <v-col class="tag-box" cols="auto">
                 <v-img src="../assets/TagIcon.png" class="tag-icon" contain></v-img>
                 <div class="tag-text-box">
-                  <span class="tag-text" style="margin-right: 3.125rem; margin-top: 1.875rem;">Finance</span>
+                  <span class="tag-text" style="margin-right: 50px; margin-top: 30px;">Finance</span>
                 </div>
               </v-col>
             </v-row>
@@ -121,12 +121,12 @@
         <v-row class="contact-info" align="center" justify="space-around">
           <v-col cols="auto">
             <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
-            <p style="font-size: 3.9375rem; position: absolute; margin-left: 42.1875rem; margin-top: 0.4375rem; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
+            <p style="font-size: 63px; position: absolute; margin-left: 675px; margin-top: 7px; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
           </v-col>
           <v-col cols="auto">
             <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
-            <p style="font-size: 2.125rem; position: absolute; margin-left: -4.375rem; margin-top: 8.75rem; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
-            <p style="font-size: 1.5rem; position: absolute; margin-left: -7.5rem; margin-top: 12.5rem; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
+            <p style="font-size: 34px; position: absolute; margin-left: -70px; margin-top: 140px; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
+            <p style="font-size: 24px; position: absolute; margin-left: -120px; margin-top: 200px; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
           </v-col>
         </v-row>
       </v-row>
@@ -166,7 +166,7 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  max-width: 100rem;
+  max-width: 1600px;
   z-index: 1; /* Lower z-index to stay behind other content */
 }
 
@@ -180,29 +180,33 @@ export default {
 .sturppy-card {
   background-color: #f3bd8e;
   color: #9d6b00;
-  border: 0.3125rem solid #391a01;
-  border-radius: 0.3125rem;
-  padding: 0.3125rem;
+  border: 5px solid #391a01;
+  border-radius: 5px;
+  padding: 5px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sturppy-title {
   font-family: 'Indie Flower', cursive;
-  font-size: 2.875rem;
+  font-size: 46px;
   color: #4a2e0d;
   font-weight: bold;
   margin: 0;
   text-decoration: underline;
-  margin-right: 1.875rem;
+  margin-right: 30px;
 }
 
 .sturppy-icon {
-  height: 4.375rem;
-  margin-left: -1.5625rem;
+  height: 70px;
+  margin-left: -25px;
+}
+
+.title-cat {
+  color: blue;
 }
 
 .sturppy-image-row {
@@ -215,36 +219,36 @@ export default {
 }
 
 .sturppy-image {
-  border: 0.3125rem solid #f3bd8e; /* Beige border */
-  border-radius: 0.3125rem;
-  width: 50rem; /* Larger size */
-  margin-top: -1.875rem;
-  margin-left: 2.3125rem;
+  border: 5px solid #f3bd8e; /* Beige border */
+  border-radius: 5px;
+  width: 800px; /* Larger size */
+  margin-top: -30px;
+  margin-left: 37px;
   height: auto; /* Maintain aspect ratio */
 }
 
 .sturppy-image-col {
-  margin-right: 1.25rem; /* Space between image and sections */
+  margin-right: 20px; /* Space between image and sections */
 }
 
 .tags-link-section {
   display: flex;
   flex-direction: column;
-  margin-left: 1.25rem; /* Space between image and sections */
+  margin-left: 20px; /* Space between image and sections */
   z-index: 2; /* Higher z-index to be on top of the blackboard */
 }
 
 .tags-section {
-  margin-bottom: 1.25rem; /* Space between tags and links */
+  margin-bottom: 20px; /* Space between tags and links */
 }
 
 .tags-heading {
-  font-size: 3.375rem;
+  font-size: 54px;
   font-family: 'Shadows Into Light', cursive;
   text-decoration-line: underline;  
   font-weight: bold;
   color: #b98004; 
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
 }
 
 .tags {
@@ -255,17 +259,17 @@ export default {
 .tag-box {
   display: flex;
   align-items: center;
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
   background-color: #f5a623; /* More orange background */
-  border: 0.25rem solid #f3bd8e;
-  border-radius: 0.3125rem;
-  padding: 0.3125rem;
-  margin-right: 4.375rem;
+  border: 4px solid #f3bd8e;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 70px;
 }
 
 .tag-icon {
-  height: 2.5rem; /* Adjust size as needed */
-  margin-right: 0.625rem; /* Space between icon and text */
+  height: 40px; /* Adjust size as needed */
+  margin-right: 10px; /* Space between icon and text */
 }
 
 .tag-text-box {
@@ -273,18 +277,18 @@ export default {
 }
 
 .tag-text {
-  font-size: 1.75rem;
+  font-size: 28px;
   font-weight: bold;
   font-family: 'Indie Flower';
   color: #4a2e0d; /* Darker text color */
 }
 
 .link-section {
-  margin-top: 1.25rem;
+  margin-top: 20px;
 }
 
 .link-heading {
-  font-size: 3.375rem;
+  font-size: 54px;
   font-family: 'Shadows Into Light', cursive;
   text-decoration-line: underline;
   font-weight: bold;
@@ -292,7 +296,7 @@ export default {
 }
 
 .link-url {
-  font-size: 1.875rem;
+  font-size: 30px;
   font-family: 'Indie Flower', cursive;
   text-decoration-line: underline;
   color: #eed9c4; 
@@ -302,21 +306,21 @@ export default {
   position: absolute;
   top: 47%; /* Adjust as needed */
   left: 10%;
-  transform: translateY(1.25rem); /* Adjust spacing as needed */
+  transform: translateY(20px); /* Adjust spacing as needed */
   z-index: 2; /* Ensure it stays above the background but below other elements */
 }
 
 .description-heading {
-  font-size: 4.625rem;
+  font-size: 74px;
   font-family: 'Shadows Into Light', cursive;
   text-decoration-line: underline;
   font-weight: bold;
   color: #b98004; 
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
 }
 
 .description-text {
-  font-size: 2.0625rem;
+  font-size: 33px;
   font-family: 'Indie Flower', cursive;
 
   color: #eed9c4; /* Yellowish gold color */
@@ -331,9 +335,9 @@ export default {
 
 .header {
   position: absolute;
-  top: 0.625rem;
-  left: 0.625rem;
-  right: 1.25rem;
+  top: 10px;
+  left: 10px;
+  right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -348,9 +352,9 @@ export default {
 
 .header-title {
   font-family: 'Indie Flower', cursive;
-  font-size: 2.5rem;
+  font-size: 40px;
   color: black;
-  margin-left: 1.25rem;
+  margin-left: 20px;
 }
 
 .icons-col {
@@ -359,11 +363,11 @@ export default {
 }
 
 .top-icons {
-  margin-right: 0.625rem;
+  margin-right: 10px;
 }
 
 .separator {
-  border-top: 1.25rem solid #4a2e0d;
+  border-top: 20px solid #4a2e0d;
   margin: 0;
   position: relative;
   z-index: 1;
@@ -371,12 +375,12 @@ export default {
 
 .icon-box {
   background-color: #edb774;
-  border: 0.1875rem solid #a3613a;
-  border-radius: 0.3125rem;
-  padding: 0.3125rem 0.625rem;
+  border: 3px solid #a3613a;
+  border-radius: 5px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
-  margin-left: 1.25rem;
+  margin-left: 20px;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -392,12 +396,12 @@ export default {
 }
 
 .icon {
-  width: 1.875rem;
+  width: 30px;
 }
 
 .icon-text {
-  font-size: 1.375rem;
-  margin-left: 0.3125rem;
+  font-size: 22px;
+  margin-left: 5px;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
 }
@@ -413,48 +417,48 @@ export default {
 
 .quick-links-box {
   position: absolute;
-  top: 3.125rem;
-  left: 3.125rem;
+  top: 50px;
+  left: 50px;
   background-color: #f3bd8e;
-  padding: 0.625rem;
-  border: 0.25rem solid #391a01;
+  padding: 10px;
+  border: 4px solid #391a01;
   display: flex;
   align-items: center;
   color: rgb(87, 45, 4);
-  font-size: 2.5rem;
+  font-size: 40px;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
-  box-shadow: 0.9375rem 0.75rem 0.125rem rgba(0, 0, 0, 0.6);
+  box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
 }
 
 .large-box {
   position: absolute;
-  top: 15.625rem;
-  left: 3.125rem;
-  width: 25rem;
-  height: 18.75rem;
+  top: 250px;
+  left: 50px;
+  width: 400px;
+  height: 300px;
   background-color: #f3bd8e; /* Less bright yellow background */
-  border: 0.25rem solid #391a01;
+  border: 4px solid #391a01;
   display: flex;
   align-items: center;
   justify-content: center;
   color: rgb(87, 45, 4);
-  font-size: 2.5rem;
+  font-size: 40px;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
-  box-shadow: 1.875rem 0.75rem 0.125rem rgba(0, 0, 0, 0.6);
+  box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
 }
 
 .large-box-text {
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 .footer-text {
   position: absolute;
-  bottom: 1.25rem;
-  left: 3.125rem;
+  bottom: 20px;
+  left: 50px;
   color: white;
-  font-size: 1.75rem;
+  font-size: 28px;
   font-family: monospace;
 }
 
@@ -463,12 +467,12 @@ export default {
 }
 
 .contact {
-  margin: 1.25rem 0;
+  margin: 20px 0;
   position: relative;
 }
 
 .contact-banner {
-  width: 32.5rem;
+  width: 520px;
   height: auto;
   position: absolute;
   right: 0;
@@ -484,21 +488,21 @@ export default {
 }
 
 .contact-icon {
-  height: 3.125rem;
+  height: 50px;
   position: absolute;
-  margin-left: 37.5rem;
-  margin-top: 1.25rem;
+  margin-left: 600px;
+  margin-top: 20px;
 }
 
 .email-icon {
-  height: 3.125rem;
+  height: 50px;
   position: absolute;
-  margin-left: -9.0625rem;
-  margin-top: 9.1875rem;
+  margin-left: -145px;
+  margin-top: 147px;
 }
 
 .contact-info p {
-  font-size: 1.125rem;
+  font-size: 18px;
   color: white;
   margin: 0;
 }
@@ -512,25 +516,436 @@ export default {
   bottom: 0;
   left: 58%;
   transform: translateX(-50%);
-  height: 10.625rem;
+  height: 170px;
 }
 
 /* New Styles for Bottom Left Images */
 .bottom-left-images {
   position: absolute;
-  bottom: 1.25rem; /* Adjust this value to position the images as desired */
-  left: 1.25rem; /* Adjust this value to position the images as desired */
+  bottom: 20px; /* Adjust this value to position the images as desired */
+  left: 20px; /* Adjust this value to position the images as desired */
   display: flex;
   align-items: center;
   z-index: 2; /* Ensure they appear above the background */
 }
 
 .cat-image {
-  height: 25rem; /* Adjust size as needed */
+  height: 400px; /* Adjust size as needed */
 }
 
 .ball-image {
-  height: 15.625rem; /* Adjust size as needed */
-  margin-top: 12.5rem;
+  height: 250px; /* Adjust size as needed */
+  margin-top: 200px;
 }
+
+@media (max-width: 600px) {
+  .top-section {
+  position: relative;
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blackboard {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 330px;
+  z-index: 1; /* Lower z-index to stay behind other content */
+}
+
+.sturppy-box {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title-cat {
+  width: 40px;
+  position: absolute;
+  margin-bottom: 25px;
+}
+
+.sturppy-card {
+  background-color: #f3bd8e;
+  color: #9d6b00;
+  border: 5px solid #391a01;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sturppy-title {
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+  color: #4a2e0d;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: underline;
+  margin-right: -10px;
+}
+
+.sturppy-icon {
+  width: 20px;
+  margin-left: -20px;
+  position: absolute;
+}
+
+.sturppy-image-row {
+  position: absolute;
+  top: 20%; /* Adjust as needed */
+  left: 10%; /* Adjust as needed */
+  display: flex;
+  align-items: flex-start;
+  z-index: 2; /* Higher z-index to be on top of the blackboard */
+}
+
+.sturppy-image {
+  border: 5px solid #f3bd8e; /* Beige border */
+  border-radius: 5px;
+  width: 170px; /* Larger size */
+  margin-top: 50px;
+  margin-left: 17px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.sturppy-image-col {
+  margin-right: 20px; /* Space between image and sections */
+}
+
+.tags-link-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; /* Space between image and sections */
+  z-index: 2; /* Higher z-index to be on top of the blackboard */
+  margin-top: -150px;
+}
+
+.tags-section {
+  margin-bottom: 20px; /* Space between tags and links */
+}
+
+.tags-heading {
+  font-size: 18px;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration-line: underline;  
+  font-weight: bold;
+  color: #b98004; 
+  margin-bottom: 15px;
+  margin-left: 187px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-box {
+  display: flex;
+  align-items: center;
+  background-color: #f5a623; /* More orange background */
+  border: 4px solid #f3bd8e;
+  border-radius: 5px;
+  width: 90px; /* Adjusted width for smaller tag */
+  height: 20px; /* Adjusted height for smaller tag */
+  margin-left: 200px;
+  margin-bottom: 10px; /* Reduced margin to bring tags closer */
+  padding: 0 5px; /* Added padding for spacing */
+}
+
+.tag-text {
+  font-size: 10px; /* Slightly smaller font */
+  font-weight: bold;
+  font-family: 'Indie Flower';
+  color: #4a2e0d; /* Darker text color */
+  white-space: nowrap; /* Ensure text stays within the box */
+  overflow: hidden;
+  margin-left: 15px; /* Added margin to move text closer to icon */
+}
+
+.tag-icon {
+  height: 12px; /* Adjusted size as needed */
+  position: absolute;
+  margin-left: -20px;
+}
+
+
+.tag-text-box {
+  background-color: transparent; /* No additional background for text box */
+}
+
+.link-section {
+  margin-top: -15px;
+  margin-left: 190px;
+}
+
+.link-heading {
+  font-size: 18px;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration-line: underline;
+  font-weight: bold;
+  color: #b98004; 
+}
+
+.link-url {
+  font-size: 10px;
+  font-family: 'Indie Flower', cursive;
+  text-decoration-line: underline;
+  color: #eed9c4; 
+}
+
+.description-section {
+  position: absolute;
+  top: 47%; /* Adjust as needed */
+  left: 14%;
+  transform: translateY(20px); /* Adjust spacing as needed */
+  z-index: 2; /* Ensure it stays above the background but below other elements */
+}
+
+.description-heading {
+  font-size: 22px;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration-line: underline;
+  font-weight: bold;
+  color: #b98004; 
+  margin-bottom: 10px;
+}
+
+.cat-image {
+  width: 100px;
+  position: absolute;
+  margin-top: 330px;
+}
+
+.ball-image {
+  width: 100px;
+  margin-left: 90px;
+  margin-bottom: -100px;
+}
+
+.description-text {
+  font-size: 8px;
+  font-family: 'Indie Flower', cursive;
+
+  color: #eed9c4; /* Yellowish gold color */
+  line-height: 1.5;
+}
+
+.description-text::after {
+  content: " ";
+  display: block;
+  color: #f5f5f5; /* Slightly white/beige color */
+}
+
+.header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 1;
+}
+
+.title-col {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  font-family: 'Indie Flower', cursive;
+  font-size: 14px;
+  color: black;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.icons-col {
+    position: absolute;
+    align-items: center;
+  }
+  
+  .top-icons {
+    margin-left: 132px;
+    margin-top: -25px;
+  }
+
+  .icon-box {
+    background-color: #edb774;
+    border: 3px solid #a3613a;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .icon-button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 5px;
+  }
+  
+  .icon-box:hover {
+    background-color: #d9a56e;
+    border-color: #8a4c26;
+  }
+  
+  .icon {
+    width: 16px;
+  }
+  
+  .icon-text {
+    font-size: 12px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+  }
+
+  .bottom-section {
+    height: 100vh;
+    background-image: url('../assets/BottomBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    align-items: center;
+  }
+  
+  .quick-links-box {
+    position: absolute;
+    top: 20px;
+    left: 125px;
+    background-color: #f3bd8e;
+    padding: 5px;
+    border: 4px solid #391a01;
+    display: flex;
+    align-items: center;
+    color: rgb(87, 45, 4);
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+
+
+  .large-box {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    width: 230px;
+    height: 120px;
+    background-color: #f3bd8e; /* Less bright yellow background */
+    border: 4px solid #391a01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(87, 45, 4);
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .link-icon {
+    width: 20px;
+  }
+  
+  .large-box-text {
+    font-size: 40px;
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 20px;
+    left: 2px;
+    color: white;
+    font-size: 9px;
+    font-family: monospace;
+  }
+  
+  .footer-text p {
+    margin: 0;
+  }
+  
+  .contact {
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .contact-banner {
+    width: 360px;
+    position: absolute;
+    top: 200px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 40%;
+    width: 100px;
+  }
+  
+  .contact-icon {
+    width: 40px;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 230px;
+  }
+  
+  .email-icon {
+    width: 50px;
+    position: absolute;
+    margin-top: 350px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    right: 5px;
+    top: 220px;
+    position: absolute;
+  }
+  
+  .email-label {
+    font-size: 14px;
+    color: yellow;
+    bottom: 20px;
+  }
+  
+  .email-address {
+    font-size: 14px;
+    color: yellow;
+  }
+  
+  .cat-paw {
+    position: absolute;
+    bottom: 0;
+    left: 78%;
+    transform: translateX(-50%);
+    height: 140px;
+  }
+
+  }
+
+
+
+
+
+
+
 </style>
