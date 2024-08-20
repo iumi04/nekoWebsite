@@ -944,6 +944,414 @@ export default {
 
 
 
+  /* TABLET VIEW */
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    .top-section {
+  position: relative;
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blackboard {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1600px;
+  z-index: 1; /* Lower z-index to stay behind other content */
+}
+
+.sturppy-box {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sturppy-card {
+  background-color: #f3bd8e;
+  color: #9d6b00;
+  border: 5px solid #391a01;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  height: 90px;
+}
+
+.sturppy-title {
+  font-family: 'Indie Flower', cursive;
+  font-size: 36px;
+  color: #4a2e0d;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: underline;
+  margin-right: 30px;
+}
+
+.sturppy-icon {
+  width: 40px;
+  margin-left: 25px;
+}
+
+.title-cat {
+  color: blue;
+}
+
+.sturppy-image-row {
+  position: absolute;
+  top: 28%; /* Adjust as needed */
+  left: 10%; /* Adjust as needed */
+  display: flex;
+  align-items: flex-start;
+  z-index: 2; /* Higher z-index to be on top of the blackboard */
+}
+
+.sturppy-image {
+  border: 5px solid #f3bd8e; /* Beige border */
+  border-radius: 5px;
+  width: 350px; /* Larger size */
+  margin-top: -30px;
+  margin-left: 22px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.sturppy-image-col {
+  margin-right: 20px; /* Space between image and sections */
+}
+
+.tags-link-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 395px; /* Space between image and sections */
+  margin-top: -310px;
+  z-index: 2; /* Higher z-index to be on top of the blackboard */
+}
+
+.tags-section {
+  margin-bottom: 20px; /* Space between tags and links */
+}
+
+.tags-heading {
+  font-size: 36px;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration-line: underline;  
+  font-weight: bold;
+  color: #b98004; 
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #f5a623; /* More orange background */
+  border: 4px solid #f3bd8e;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 70px;
+}
+
+.tag-icon {
+  width: 25px; /* Adjust size as needed */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.tag-text-box {
+  background-color: transparent; /* No additional background for text box */
+}
+
+.tag-text {
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Indie Flower';
+  color: #4a2e0d; /* Darker text color */
+}
+
+.link-section {
+  margin-top: 20px;
+}
+
+.link-heading {
+  font-size: 36px;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration-line: underline;
+  font-weight: bold;
+  color: #b98004; 
+}
+
+.link-url {
+  font-size: 23px;
+  font-family: 'Indie Flower', cursive;
+  text-decoration-line: underline;
+  color: #eed9c4; 
+}
+
+.description-section {
+  position: absolute;
+  top: 47%; /* Adjust as needed */
+  left: 10%;
+  transform: translateY(20px); /* Adjust spacing as needed */
+  z-index: 2; /* Ensure it stays above the background but below other elements */
+}
+
+.description-heading {
+  font-size: 44px;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration-line: underline;
+  font-weight: bold;
+  color: #b98004; 
+  margin-bottom: 10px;
+}
+
+.description-text {
+  font-size: 17px;
+  font-family: 'Indie Flower', cursive;
+  color: #eed9c4; /* Yellowish gold color */
+  line-height: 1.5;
+}
+
+.description-text::after {
+  content: " ";
+  display: block;
+  color: #f5f5f5; /* Slightly white/beige color */
+}
+
+.header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 1;
+}
+
+.title-col {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  color: black;
+  margin-left: -20px;
+}
+
+.icons-col {
+  display: flex;
+  align-items: center;
+}
+
+.top-icons {
+  margin-right: 10px;
+}
+
+.separator {
+  border-top: 20px solid #4a2e0d;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.icon-box {
+  background-color: #edb774;
+  border: 3px solid #a3613a;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.icon-button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-box:hover {
+  background-color: #d9a56e;
+  border-color: #8a4c26;
+}
+
+.icon {
+  width: 30px;
+}
+
+.icon-text {
+  font-size: 22px;
+  margin-left: 5px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+}
+
+.bottom-section {
+    height: 100vh;
+    background-image: url('../assets/BottomBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    align-items: center;
+  }
+  
+  .quick-links-box {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    background-color: #f3bd8e;
+    padding: 5px;
+    border: 4px solid #391a01;
+    display: flex;
+    align-items: center;
+    color: rgb(87, 45, 4);
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
+    width: 180px;
+    height: 100px;
+  }
+  
+  .large-box {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    width: 280px;
+    height: 230px;
+    background-color: #f3bd8e; /* Less bright yellow background */
+    border: 4px solid #391a01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(87, 45, 4);
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .link-icon {
+    width: 30px;
+  }
+  
+  .large-box-text {
+    font-size: 40px;
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 20px;
+    left: 2px;
+    color: white;
+    font-size: 19px;
+    font-family: monospace;
+  }
+  
+  .footer-text p {
+    margin: 0;
+  }
+  
+  .contact {
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .contact-banner {
+    width: 360px;
+    position: absolute;
+    top: -10px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100px;
+    margin-top: -240px;
+    margin-right: -380px;
+  }
+  
+  .contact-icon {
+    width: 40px;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 230px;
+  }
+  
+  .email-icon {
+    width: 50px;
+    position: absolute;
+    margin-top: 350px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    right: 5px;
+    top: 220px;
+    position: absolute;
+  }
+  
+  .email-label {
+    font-size: 14px;
+    color: yellow;
+    bottom: 20px;
+  }
+  
+  .email-address {
+    font-size: 14px;
+    color: yellow;
+  }
+  
+  .cat-paw {
+    position: absolute;
+    bottom: 0;
+    left: 74%;
+    transform: translateX(-50%);
+    height: 140px;
+  }
+  
+
+/* New Styles for Bottom Left Images */
+.bottom-left-images {
+  position: absolute;
+  bottom: 20px; /* Adjust this value to position the images as desired */
+  left: 20px; /* Adjust this value to position the images as desired */
+  display: flex;
+  align-items: center;
+  z-index: 2; /* Ensure they appear above the background */
+}
+
+.cat-image {
+  width: 200px; /* Adjust size as needed */
+  position: absolute;
+}
+
+.ball-image {
+  height: 100px; /* Adjust size as needed */
+  margin-top: 150px;
+}
+  }
+
+
 
 
 
