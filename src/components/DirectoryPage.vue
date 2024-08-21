@@ -781,7 +781,7 @@
 
   /* TABLET VIEW */
 
-  @media (min-width: 601px) and (max-width: 900px) {
+  @media (min-width: 601px) and (max-width: 1024px) {
     .top-section {
     position: relative;
     background-size: cover;

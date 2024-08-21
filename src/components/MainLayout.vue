@@ -1754,7 +1754,7 @@ body {
 
 
 
-  @media (min-width: 601px) and (max-width: 900px) {
+  @media (min-width: 601px) and (max-width: 1024px) {
     .separator {
   border-top: 20px solid #4a2e0d;
   margin: 0;
@@ -1941,11 +1941,19 @@ body {
 }
 
 .left-cat {
-  margin-left: -190px; 
+  position: absolute;
+  bottom: -1;
+  margin-bottom: 50px;
+  width: 250px;
+  left: 0;
+  margin-left: 0px; 
 }
 
 .right-cat {
-  margin-right: -182px; 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 0px; 
 }
 
 .second-section {
@@ -2080,7 +2088,7 @@ body {
   position: absolute;
   width: 245px;
   top: 70px; 
-  left: 85px;
+  left: 70px;
   height: calc(100vh - 40px); 
 }
 
@@ -2141,6 +2149,7 @@ body {
 .pick-one-container {
   position: relative;
   margin-top: 30px;
+  margin-right: 2px;
   display: flex;
   justify-content: flex-end;
 }
@@ -2333,7 +2342,7 @@ body {
 .catalog-icon {
   position: absolute;
   top: 98px; /* Adjust as needed */
-  left: 587px;
+  left: 255px;
   height: 26px; /* Bigger size */
 }
 
