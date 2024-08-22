@@ -231,8 +231,8 @@
       </v-col>
       <v-col cols="auto">
         <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
-        <p style="font-size: 2.125rem; position: absolute; margin-left: -4.375rem; margin-top: 8.75rem; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
-        <p style="font-size: 1.5rem; position: absolute; margin-left: -7.5rem; margin-top: 12.5rem; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
+        <p style="font-size: 38px; position: absolute; margin-left: -70px; margin-top: 140px; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
+        <p style="font-size: 28px; position: absolute; margin-left: -7.5rem; margin-top: 12.5rem; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
       </v-col>
     </v-row>
   </v-row>
@@ -583,8 +583,10 @@ body {
 
 .tool-title {
   font-family: 'Shadows Into Light', cursive;
-  font-size: 18px;
-  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: rgb(117, 80, 24);
+  color: white;
   margin-bottom: 5px;
 }
 
@@ -602,9 +604,9 @@ body {
 
 .sleeping-cat {
   position: absolute;
-  bottom: -80px; 
+  bottom: -100px; 
   left: 1%; 
-  height: 200px; 
+  height: 300px; 
   z-index: 2;
 }
 
@@ -866,9 +868,9 @@ body {
 
 .walking-cat {
   position: absolute;
-  bottom: 13px; /* Adjust as needed */
-  right: 130px;
-  height: 190px; /* Bigger size */
+  bottom: -45px; /* Adjust as needed */
+  right: 70px;
+  height: 260px; /* Bigger size */
 }
 
 .catalog-icon {
@@ -996,7 +998,7 @@ body {
 
 
 /* Responsive Styles */
-@media (max-width: 600px) {
+@media (min-width: 379px) and (max-width: 600px) {
   .separator {
   border-top: 20px solid #4a2e0d;
   margin: 0;
@@ -1041,7 +1043,7 @@ body {
 
 .header-title {
   font-family: 'Indie Flower', cursive;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   margin-left: 5px;
 }
@@ -1049,6 +1051,7 @@ body {
 .icons-col {
     position: absolute;
     align-items: center;
+    margin-left: 20px;
   }
   
   .top-icons {
@@ -1094,21 +1097,20 @@ body {
 }
 
 .slogan-cloud {
-  width: 80%;
+  width: 85%;
   max-width: 800px; 
   height: auto;
-  margin-top: 50px; 
-  margin-left: 51px;
+  margin-top: 23px; 
 }
 
 .slogan-text {
   position: absolute;
-  top: 120px; 
+  top: 90px; 
   left: 50%;
   font-family: 'Shadows Into Light', cursive;
   transform: translateX(-50%);
-  font-size: 18px; 
-  color: white;
+  font-size: 22px; 
+  color: black;
   width: 90%; 
   text-align: center;
   line-height: 1.4; 
@@ -1180,17 +1182,25 @@ body {
 }
 
 .left-cat, .right-cat {
-  height: 170px; /* Reduced size for better visibility */
-  width: 170px; /* Reduced size for better visibility */
+  height: 190px; /* Reduced size for better visibility */
+  width: 190px; /* Reduced size for better visibility */
   margin-top: -150px; /* Move cats up to reveal separators */
 }
 
 .left-cat {
-  margin-left: -85px; 
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -10px;
+  width: 210px;
+  left: 0;
+  margin-left: 0px; 
 }
 
 .right-cat {
-  margin-right: -55px; 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 0px; 
 }
 
 
@@ -1215,22 +1225,23 @@ body {
 
 .left-lamp {
   top: 0%;
-  left: 7%;
+  left: 5%;
 }
 
 .right-lamp {
   top: 0%;
-  right: 7%;
+  right: 1%;
 }
 
 .featured-tool-box {
   background-color: #f3bd8e; 
   border: 2px solid #391a01;
   box-shadow: none; 
-  margin-top: 25px;
+  margin-top: 45px;
+  margin-left: 10px;
   border-radius: 0; 
-  width: 200px;
-  height: 100px;
+  width: 230px;
+  height: 60px;
 }
 
 .featured-tool-heading {
@@ -1255,7 +1266,7 @@ body {
 
   .tool-box {
     height: 120px !important;
-    width: 170px !important;
+    width: 160px !important;
     border-radius: 0;
     border: 2px solid black;
     position: relative;
@@ -1289,9 +1300,10 @@ body {
 
 .tool-title {
   font-family: 'Shadows Into Light', cursive;
-  font-size: 18px;
-  color: black;
-  margin-bottom: 5px;
+  font-size: 20px;
+  position: absolute;
+  margin-left: -40px;
+  color: white;
 }
 
 .tool-description {
@@ -1310,6 +1322,7 @@ body {
   position: absolute;
   bottom: -80px; 
   left: 1%; 
+  right: 50px;
   height: 200px; 
   z-index: 2;
 }
@@ -1609,15 +1622,15 @@ body {
 
 .walking-cat {
   position: absolute;
-  bottom: 14px; /* Adjust as needed */
-  left: 150px;
+  bottom: 8px; /* Adjust as needed */
+  left: 140px;
   width: 250px; /* Bigger size */
 }
 
 .catalog-icon {
   position: absolute;
-  top: 98px; /* Adjust as needed */
-  left: 587px;
+  top: 165px; /* Adjust as needed */
+  left: 270px;
   height: 26px; /* Bigger size */
 }
 
@@ -1676,7 +1689,7 @@ body {
     bottom: 20px;
     left: 2px;
     color: white;
-    font-size: 9px;
+    font-size: 15px;
     font-family: monospace;
   }
   
@@ -1690,9 +1703,10 @@ body {
   }
   
   .contact-banner {
-    width: 360px;
+    width: 320px;
     position: absolute;
     top: 200px;
+    right: 50px;
   }
   
   .contact-info {
@@ -1700,11 +1714,12 @@ body {
     justify-content: space-around;
     position: absolute;
     top: 40%;
+    margin-left: 60px;
     width: 100px;
   }
   
   .contact-icon {
-    width: 40px;
+    width: 35px;
     position: absolute;
     margin-left: 80px;
     margin-top: 230px;
@@ -1717,7 +1732,7 @@ body {
   }
   
   .contact-info p {
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     margin: 0;
     right: 5px;
@@ -1726,20 +1741,21 @@ body {
   }
   
   .email-label {
-    font-size: 14px;
+    font-size: 12px;
     color: yellow;
     bottom: 20px;
   }
   
   .email-address {
-    font-size: 14px;
+    font-size: 12px;
     color: yellow;
   }
   
   .cat-paw {
+    display: none;
     position: absolute;
     bottom: 0;
-    left: 78%;
+    left: 38%;
     transform: translateX(-50%);
     height: 140px;
   }
@@ -2335,7 +2351,7 @@ body {
 .walking-cat {
   position: absolute;
   bottom: -26px; /* Adjust as needed */
-  right: -90px;
+  right: 10px;
   height: 160px; /* Bigger size */
 }
 
