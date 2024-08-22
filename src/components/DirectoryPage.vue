@@ -86,12 +86,11 @@
     <v-row class="contact-info" align="center" justify="space-around">
       <v-col cols="auto">
         <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
-        <p style="font-size: 63px; position: absolute; margin-left: 675px; margin-top: 7px; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
+        <p class="contactLenses"><u>Contact</u></p>
       </v-col>
       <v-col cols="auto">
         <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
-        <p style="font-size: 34px; position: absolute; margin-left: -70px; margin-top: 140px; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
-        <p style="font-size: 24px; position: absolute; margin-left: -120px; margin-top: 200px; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
+        <p class="email-textxD">Email : <u>thomas@edison.ai</u></p>
       </v-col>
     </v-row>
   </v-row>
@@ -329,123 +328,137 @@
   }
   
   .bottom-section {
-    height: 100vh;
-    background-image: url('../assets/BottomBackground.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    align-items: center;
-  }
-  
-  .quick-links-box {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: #f3bd8e;
-    padding: 10px;
-    border: 4px solid #391a01;
-    display: flex;
-    align-items: center;
-    color: rgb(87, 45, 4);
-    font-size: 40px;
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: bold;
-    box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
-  }
-  
-  .large-box {
-    position: absolute;
-    top: 250px;
-    left: 50px;
-    width: 400px;
-    height: 300px;
-    background-color: #f3bd8e; /* Less bright yellow background */
-    border: 4px solid #391a01;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(87, 45, 4);
-    font-size: 40px;
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: bold;
-    box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
-  }
-  
-  .large-box-text {
-    font-size: 40px;
-  }
-  
-  .footer-text {
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
-    color: white;
-    font-size: 28px;
-    font-family: monospace;
-  }
-  
-  .footer-text p {
-    margin: 0;
-  }
-  
-  .contact {
-    margin: 20px 0;
-    position: relative;
-  }
-  
-  .contact-banner {
-    width: 520px;
-    height: auto;
-    position: absolute;
-    right: 0;
-    top: 20%;
-  }
-  
-  .contact-info {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    top: 10%;
-    width: 100%;
-  }
-  
-  .contact-icon {
-    height: 50px;
-    position: absolute;
-    margin-left: 600px;
-    margin-top: 20px;
-  }
-  
-  .email-icon {
-    height: 50px;
-    position: absolute;
-    margin-left: -145px;
-    margin-top: 147px;
-  }
-  
-  .contact-info p {
-    font-size: 18px;
-    color: white;
-    margin: 0;
-  }
-  
-  .email-label {
-    font-size: 34px;
-    color: yellow;
-  }
-  
-  .email-address {
-    font-size: 24px;
-    color: yellow;
-  }
-  
-  .cat-paw {
-    position: absolute;
-    bottom: 0;
-    left: 58%;
-    transform: translateX(-50%);
-    height: 170px;
-  }
+  height: 100vh;
+  background-image: url('~@/assets/BottomBackground.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center;    
+}
+
+
+.email-textxD {
+  font-size: 38px !important; 
+  position: absolute !important;
+   margin-left: -45px !important;
+    margin-top: 140px !important; 
+    color: yellow !important; 
+    font-family: 'Indie Flower', cursive !important;
+}
+
+.contactLenses {
+  font-size: 3.9375rem !important; 
+  position: absolute !important; 
+  margin-left: 705px !important; 
+  margin-top: 7px !important; 
+  font-family: 'Indie Flower', cursive !important;
+}
+
+.quick-links-box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #f3bd8e; 
+  padding: 10px;
+  border: 4px solid #391a01; 
+  display: flex;
+  align-items: center;
+  color: rgb(87, 45, 4);
+  font-size: 40px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
+}
+
+.large-box {
+  position: absolute;
+  top: 250px; /* Adjust as needed to position below the quick links box */
+  left: 50px;
+  width: 400px; /* Width to make it square-like */
+  height: 300px; /* Height to match width */
+  background-color: #f3bd8e; 
+  border: 4px solid #391a01; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(87, 45, 4);
+  font-size: 40px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  box-shadow: 30px 12px 2px rgba(0, 0, 0, 0.6);
+}
+
+.large-box-text {
+  font-size: 40px;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 20px; /* Position close to bottom */
+  left: 50px; /* Position close to the right */
+  color: white;
+  font-size: 28px;
+  font-family: monospace;
+}
+
+.footer-text p {
+  margin: 0; /* Remove default margin */
+}
+
+.contact {
+  margin: 20px 0;
+  position: relative;
+}
+
+.contact-banner {
+  width: 520px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+
+.contact-icon {
+  height: 50px;
+  position: absolute;
+  margin-left: 630px;
+  margin-top: 20px;
+}
+
+.email-icon {
+  height: 50px;
+  position: absolute;
+  margin-left: -120px;
+  margin-top: 147px;
+}
+
+
+.contact-info p {
+  font-size: 18px;
+  color: white;
+  margin: 0;
+}
+
+.email-text {
+  color: gold;
+}
+
+.cat-paw {
+  position: absolute;
+  bottom: 0;
+  left: 58%;
+  transform: translateX(-50%);
+  height: 170px;
+}
+
 
   @media (max-width: 600px) {
     .top-section {
@@ -662,6 +675,15 @@
     position: relative;
     align-items: center;
   }
+
+  .email-textxD {
+  font-size: 28px !important; 
+  position: absolute !important;
+   margin-right: -10px !important;
+    margin-top: 140px !important; 
+    color: yellow !important; 
+    font-family: 'Indie Flower', cursive !important;
+}
   
   .quick-links-box {
     position: absolute;
@@ -709,7 +731,7 @@
     bottom: 20px;
     left: 2px;
     color: white;
-    font-size: 9px;
+    font-size: 15px;
     font-family: monospace;
   }
   
@@ -723,9 +745,10 @@
   }
   
   .contact-banner {
-    width: 360px;
+    width: 320px;
     position: absolute;
     top: 200px;
+    right: 20px;
   }
   
   .contact-info {
@@ -733,24 +756,28 @@
     justify-content: space-around;
     position: absolute;
     top: 40%;
+    margin-left: 30px;
     width: 100px;
   }
   
   .contact-icon {
-    width: 40px;
+    width: 35px;
     position: absolute;
     margin-left: 80px;
     margin-top: 230px;
   }
   
   .email-icon {
+    display: none;
     width: 50px;
     position: absolute;
     margin-top: 350px;
+    margin-left: -140px;
   }
   
+  
   .contact-info p {
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     margin: 0;
     right: 5px;
@@ -759,25 +786,27 @@
   }
   
   .email-label {
-    font-size: 14px;
+    font-size: 12px;
     color: yellow;
     bottom: 20px;
   }
   
   .email-address {
-    font-size: 14px;
+    font-size: 12px;
     color: yellow;
   }
   
   .cat-paw {
+    display: none;
     position: absolute;
     bottom: 0;
-    left: 78%;
+    left: 38%;
     transform: translateX(-50%);
     height: 140px;
   }
 
   }
+
 
   /* TABLET VIEW */
 
@@ -1089,10 +1118,20 @@
   }
   
   .email-icon {
+    display: none;
     width: 50px;
     position: absolute;
     margin-top: 350px;
   }
+
+  .email-textxD {
+  font-size: 30px !important; 
+  position: absolute !important;
+   margin-right: -30px !important;
+    margin-top: 140px !important; 
+    color: yellow !important; 
+    font-family: 'Indie Flower', cursive !important;
+}
   
   .contact-info p {
     font-size: 18px;

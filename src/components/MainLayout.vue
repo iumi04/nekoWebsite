@@ -227,12 +227,11 @@
     <v-row class="contact-info" align="center" justify="space-around">
       <v-col cols="auto">
         <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
-        <p style="font-size: 3.9375rem; position: absolute; margin-left: 42.1875rem; margin-top: 0.4375rem; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
+        <p class="contactLenses"><u>Contact</u></p>
       </v-col>
       <v-col cols="auto">
         <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
-        <p style="font-size: 38px; position: absolute; margin-left: -70px; margin-top: 140px; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
-        <p style="font-size: 28px; position: absolute; margin-left: -7.5rem; margin-top: 12.5rem; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
+        <p class="email-textxD">Email : <u>thomas@edison.ai</u></p>
       </v-col>
     </v-row>
   </v-row>
@@ -345,19 +344,21 @@ body {
 
 .title-cat {
   color: blue;
+  margin-bottom: 10px;
 }
 
 .header-title {
   font-family: 'Indie Flower', cursive;
   font-size: 40px;
   color: black;
-  margin-left: 20px;
+  margin-left: -20px;
 }
 
 .icons-col {
   display: flex;
   align-items: center;
 }
+
 
 .icon-box {
   background-color: #edb774; 
@@ -430,7 +431,6 @@ body {
 }
 
 .search-btn {
-  margin-left: 10px;
   font-family: 'Shadows Into Light', cursive;
   font-size: 20px; 
   font-weight: bold; 
@@ -889,6 +889,24 @@ body {
   align-items: center;    
 }
 
+
+.email-textxD {
+  font-size: 38px !important; 
+  position: absolute !important;
+   margin-left: -45px !important;
+    margin-top: 140px !important; 
+    color: yellow !important; 
+    font-family: 'Indie Flower', cursive !important;
+}
+
+.contactLenses {
+  font-size: 3.9375rem !important; 
+  position: absolute !important; 
+  margin-left: 705px !important; 
+  margin-top: 7px !important; 
+  font-family: 'Indie Flower', cursive !important;
+}
+
 .quick-links-box {
   position: absolute;
   top: 50px;
@@ -964,16 +982,17 @@ body {
 .contact-icon {
   height: 50px;
   position: absolute;
-  margin-left: 600px;
+  margin-left: 630px;
   margin-top: 20px;
 }
 
 .email-icon {
   height: 50px;
   position: absolute;
-  margin-left: -145px;
+  margin-left: -120px;
   margin-top: 147px;
 }
+
 
 .contact-info p {
   font-size: 18px;
@@ -1642,6 +1661,15 @@ body {
     position: relative;
     align-items: center;
   }
+
+  .email-textxD {
+  font-size: 28px !important; 
+  position: absolute !important;
+   margin-right: -10px !important;
+    margin-top: 140px !important; 
+    color: yellow !important; 
+    font-family: 'Indie Flower', cursive !important;
+}
   
   .quick-links-box {
     position: absolute;
@@ -1714,7 +1742,7 @@ body {
     justify-content: space-around;
     position: absolute;
     top: 40%;
-    margin-left: 60px;
+    margin-left: 30px;
     width: 100px;
   }
   
@@ -1726,10 +1754,16 @@ body {
   }
   
   .email-icon {
+    display: none;
     width: 50px;
     position: absolute;
     margin-top: 350px;
+    margin-left: -140px;
   }
+
+  
+
+  
   
   .contact-info p {
     font-size: 15px;
@@ -2455,10 +2489,20 @@ body {
   }
   
   .email-icon {
+    display: none;
     width: 50px;
     position: absolute;
     margin-top: 350px;
   }
+
+  .email-textxD {
+  font-size: 30px !important; 
+  position: absolute !important;
+   margin-right: -30px !important;
+    margin-top: 140px !important; 
+    color: yellow !important; 
+    font-family: 'Indie Flower', cursive !important;
+}
   
   .contact-info p {
     font-size: 18px;

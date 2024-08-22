@@ -117,19 +117,18 @@
       </div>
       
       <v-row class="contact" align="center" justify="center">
-        <v-img src="../assets/ContactBanner.png" class="contact-banner" contain></v-img>
-        <v-row class="contact-info" align="center" justify="space-around">
-          <v-col cols="auto">
-            <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
-            <p style="font-size: 63px; position: absolute; margin-left: 675px; margin-top: 7px; font-family: 'Indie Flower', cursive;"><u>Contact</u></p>
-          </v-col>
-          <v-col cols="auto">
-            <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
-            <p style="font-size: 34px; position: absolute; margin-left: -70px; margin-top: 140px; color: yellow; font-family: 'Indie Flower', cursive;">Email :</p>
-            <p style="font-size: 24px; position: absolute; margin-left: -120px; margin-top: 200px; color: yellow; font-family: 'Indie Flower', cursive;"><u>thomas@edison.ai</u></p>
-          </v-col>
-        </v-row>
-      </v-row>
+    <v-img src="../assets/ContactBanner.png" class="contact-banner" contain></v-img>
+    <v-row class="contact-info" align="center" justify="space-around">
+      <v-col cols="auto">
+        <v-img src="../assets/ContactIcon.png" class="contact-icon" contain height="60"></v-img>
+        <p class="contactLenses"><u>Contact</u></p>
+      </v-col>
+      <v-col cols="auto">
+        <v-img src="../assets/EmailIcon.png" class="email-icon" contain height="35"></v-img>
+        <p class="email-textxD">Email : <u>thomas@edison.ai</u></p>
+      </v-col>
+    </v-row>
+  </v-row>
       
       <v-img src="../assets/CatPaw.png" class="cat-paw" contain></v-img>
     </v-container>
@@ -413,6 +412,23 @@ export default {
   background-repeat: no-repeat;
   position: relative;
   align-items: center;
+}
+
+.email-textxD {
+  font-size: 38px !important; 
+  position: absolute !important;
+   margin-left: -45px !important;
+    margin-top: 140px !important; 
+    color: yellow !important; 
+    font-family: 'Indie Flower', cursive !important;
+}
+
+.contactLenses {
+  font-size: 3.9375rem !important; 
+  position: absolute !important; 
+  margin-left: 705px !important; 
+  margin-top: 7px !important; 
+  font-family: 'Indie Flower', cursive !important;
 }
 
 .quick-links-box {
@@ -823,6 +839,15 @@ export default {
     position: relative;
     align-items: center;
   }
+
+  .email-textxD {
+  font-size: 28px !important; 
+  position: absolute !important;
+   margin-right: -10px !important;
+    margin-top: 140px !important; 
+    color: yellow !important; 
+    font-family: 'Indie Flower', cursive !important;
+}
   
   .quick-links-box {
     position: absolute;
@@ -840,8 +865,6 @@ export default {
     box-shadow: 15px 12px 2px rgba(0, 0, 0, 0.6);
   }
   
-
-
   .large-box {
     position: absolute;
     top: 100px;
@@ -872,7 +895,7 @@ export default {
     bottom: 20px;
     left: 2px;
     color: white;
-    font-size: 9px;
+    font-size: 15px;
     font-family: monospace;
   }
   
@@ -886,9 +909,10 @@ export default {
   }
   
   .contact-banner {
-    width: 360px;
+    width: 320px;
     position: absolute;
     top: 200px;
+    right: 50px;
   }
   
   .contact-info {
@@ -896,24 +920,31 @@ export default {
     justify-content: space-around;
     position: absolute;
     top: 40%;
+    margin-left: 30px;
     width: 100px;
   }
   
   .contact-icon {
-    width: 40px;
+    width: 35px;
     position: absolute;
     margin-left: 80px;
     margin-top: 230px;
   }
   
   .email-icon {
+    display: none;
     width: 50px;
     position: absolute;
     margin-top: 350px;
+    margin-left: -140px;
   }
+
+  
+
+  
   
   .contact-info p {
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     margin: 0;
     right: 5px;
@@ -922,25 +953,27 @@ export default {
   }
   
   .email-label {
-    font-size: 14px;
+    font-size: 12px;
     color: yellow;
     bottom: 20px;
   }
   
   .email-address {
-    font-size: 14px;
+    font-size: 12px;
     color: yellow;
   }
   
   .cat-paw {
+    display: none;
     position: absolute;
     bottom: 0;
-    left: 78%;
+    left: 38%;
     transform: translateX(-50%);
     height: 140px;
   }
 
   }
+
 
 
 
@@ -1203,6 +1236,26 @@ export default {
   font-weight: bold;
 }
 
+/* New Styles for Bottom Left Images */
+.bottom-left-images {
+  position: absolute;
+  bottom: 20px; /* Adjust this value to position the images as desired */
+  left: 20px; /* Adjust this value to position the images as desired */
+  display: flex;
+  align-items: center;
+  z-index: 2; /* Ensure they appear above the background */
+}
+
+.cat-image {
+  width: 200px; /* Adjust size as needed */
+  position: absolute;
+}
+
+.ball-image {
+  height: 100px; /* Adjust size as needed */
+  margin-top: 150px;
+}
+
 .bottom-section {
     height: 100vh;
     background-image: url('../assets/BottomBackground.png');
@@ -1296,10 +1349,20 @@ export default {
   }
   
   .email-icon {
+    display: none;
     width: 50px;
     position: absolute;
     margin-top: 350px;
   }
+
+  .email-textxD {
+  font-size: 30px !important; 
+  position: absolute !important;
+   margin-right: -30px !important;
+    margin-top: 140px !important; 
+    color: yellow !important; 
+    font-family: 'Indie Flower', cursive !important;
+}
   
   .contact-info p {
     font-size: 18px;
@@ -1328,27 +1391,6 @@ export default {
     transform: translateX(-50%);
     height: 140px;
   }
-  
-
-/* New Styles for Bottom Left Images */
-.bottom-left-images {
-  position: absolute;
-  bottom: 20px; /* Adjust this value to position the images as desired */
-  left: 20px; /* Adjust this value to position the images as desired */
-  display: flex;
-  align-items: center;
-  z-index: 2; /* Ensure they appear above the background */
-}
-
-.cat-image {
-  width: 200px; /* Adjust size as needed */
-  position: absolute;
-}
-
-.ball-image {
-  height: 100px; /* Adjust size as needed */
-  margin-top: 150px;
-}
   }
 
 
